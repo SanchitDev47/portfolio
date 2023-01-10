@@ -5,8 +5,7 @@ import Banner from './Components/Banner';
 function App() {
   return (
     <Box sx={{ flexGrow: 1, }}>
-      <AppBar position="sticky" sx={{ backgroundColor: 'white', boxShadow: '9', overflowX: 'hidden' }}>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between' }} >
+      <AppBar position="sticky" sx={{ display:'flex', justifyContent:'space-evenly', backgroundColor: 'white', boxShadow: '9', overflowX: 'hidden' }}>
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: '#20C5FA' }}>
               Sanchit
@@ -27,7 +26,6 @@ function App() {
               CONTACT
             </Button>
           </Toolbar>
-        </Box>
       </AppBar>
       <Banner />
     </Box>
