@@ -1,14 +1,14 @@
 import './App.css';
-import { AppBar, Box, Toolbar, Typography, Button } from '@mui/material';
-import Banner from './Components/Banner';
-import AppMenuBar from './Components/AppMenuBar';
+import { Box } from '@mui/material';
+import IndexApp from './Components/IndexApp';
 
 function App() {
   return (
-    <Box sx={{ flexGrow: 1, }}>
-      <AppMenuBar />
-      <Banner />
-    </Box>
+    <>
+      <Box sx={{ flexGrow: 1 }}>
+        <IndexApp />
+      </Box>
+    </>
   );
 }
 
