@@ -53,7 +53,7 @@ export default function IndexApp(props: Props) {
             </List>
         </Box>
     );
-    
+
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
@@ -75,7 +75,7 @@ export default function IndexApp(props: Props) {
                             variant="h1"
                             component="div"
                             sx={{ flexGrow: 1, mx: { lg: 22, md: 15, sm: 1 }, color: '#20C5FA', fontWeight: 600, fontSize: '28px', display: { xs: 'none', sm: 'block' } }}
-                            >
+                        >
                             Sanchit
                         </Typography>
                         <Box sx={{ mr: { lg: 15, md: 2, sm: 2, xs: 1 }, display: { xs: 'none', sm: 'block' } }}>
@@ -109,11 +109,11 @@ export default function IndexApp(props: Props) {
             <Box>
                 <Banner />
                 <About />
-                <Eduction />
                 <Skills />
-                <Portfolio />
+                {/* <Eduction /> */}
+                {/* <Portfolio />
                 <Testmonials />
-                <Contact />
+                <Contact /> */}
             </Box>
         </>
     );
