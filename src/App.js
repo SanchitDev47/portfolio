@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import { Box } from '@mui/material';
 import IndexApp from './Components/IndexApp';
@@ -5,9 +6,9 @@ import IndexApp from './Components/IndexApp';
 function App() {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
-        <IndexApp />
-      </Box>
+    <Box sx={{ flexGrow: 1 }}>
+      <IndexApp />
+    </Box>
     </>
   );
 }

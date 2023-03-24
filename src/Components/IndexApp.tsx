@@ -15,11 +15,11 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Banner from './Banner';
 import Contact from './Contact';
-import Eduction from './Eduction';
 import Portfolio from './Portfolio';
 import Skills from './Skills';
 import Testmonials from './Testmonials';
 import About from './About';
+import Qualification from './Qualification';
 
 interface Props {
     window?: () => Window;
@@ -109,11 +109,11 @@ export default function IndexApp(props: Props) {
             <Box>
                 <Banner />
                 <About />
+                <Qualification />
                 <Skills />
-                {/* <Eduction /> */}
-                {/* <Portfolio />
+                <Portfolio />
                 <Testmonials />
-                <Contact /> */}
+                <Contact />
             </Box>
         </>
     );
