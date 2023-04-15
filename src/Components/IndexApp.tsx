@@ -20,17 +20,24 @@ import Skills from './Skills';
 import Testmonials from './Testmonials';
 import About from './About';
 import Qualification from './Qualification';
+import Footer from './Footer';
+import Service from './Service';
 
 interface Props {
     window?: () => Window;
 }
 
+
 const drawerWidth = 240;
-const navItems = ['HOME', 'SKILLS', 'PORTFOLIO', 'TESTOMINALS', 'CONTACT'];
+const navItems = ['HOME', 'SKILLS', 'SERVICE', 'PORTFOLIO', 'TESTOMINALS', 'CONTACT'];
 
 export default function IndexApp(props: Props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+
+    // function skillsClick(){
+    //     navItems[1] += <Testmonials />
+    // }
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -58,9 +65,9 @@ export default function IndexApp(props: Props) {
 
     return (
         <>
-            <Box sx={{ display: 'flex' }}>
+            <Box>
                 <CssBaseline />
-                <AppBar component='div' position="sticky" sx={{ backgroundColor: '#fff', boxShadow: '9', overflowX: 'hidden' }}>
+                <AppBar component='div' sx={{ backgroundColor: '#fff', boxShadow: '9', overflow: 'hidden' }}>
                     <Toolbar>
                         <IconButton
                             color='default'
@@ -106,14 +113,17 @@ export default function IndexApp(props: Props) {
                     </Drawer>
                 </Box>
             </Box>
+            {/* <Box sx={{width:'1500px'}}> */}
             <Box>
                 <Banner />
                 <About />
                 <Qualification />
                 <Skills />
+                <Service />
                 <Portfolio />
                 <Testmonials />
                 <Contact />
+                <Footer />
             </Box>
         </>
     );

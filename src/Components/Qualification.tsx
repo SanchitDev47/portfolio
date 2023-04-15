@@ -5,18 +5,16 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import { Typography } from '@mui/material';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
+import { Typography, Box, Grid } from '@mui/material';
 
 export default function Qualification() {
     return (
-        <>
-
-            <Typography variant='h6' sx={{ mt: 12, display: 'flex', justifyContent: 'center', fontSize: '40px', textDecorationLine: 'underline' }}>Qualification</Typography>
-            <Timeline position="alternate">
+        <Box sx={{ m: '100px' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+                <Typography variant='h6' sx={{ mt: 5, fontSize: '35px' }}>QUALIFICATION</Typography>
+                <Box sx={{ width: '8.8rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />
+            </Box>
+            <Timeline position="alternate" sx={{ mt: '57px' }}>
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineDot sx={{ background: '#20C5FA' }} />
@@ -55,7 +53,7 @@ export default function Qualification() {
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ background: '#20C5FA' }} />
-                        <TimelineDot sx={{ background: '#20C5FA' }}  />
+                        <TimelineDot sx={{ background: '#20C5FA' }} />
                         <TimelineConnector sx={{ background: '#20C5FA' }} />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
@@ -89,6 +87,6 @@ export default function Qualification() {
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
-        </>
+        </Box>
     )
 }
