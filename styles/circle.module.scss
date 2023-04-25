@@ -36,13 +36,20 @@ $porcent-vue: 2;
 
 }
 
+.container {
+        display: flex;
+        justify-content: cetner;
+        align-items: center;
+        margin-top: 65px;
+}
+
 .progressbar {
     position: relative;
     width: 165px;
     height: 165px;
     margin: 1em;
     transform: rotate(-90deg);
-    background-color: rgb(226, 23, 23);
+    background-color: white;
     border-radius: 50%;
 }
 

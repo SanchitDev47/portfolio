@@ -12,30 +12,18 @@ export default function Skills() {
         <Typography variant='h6' sx={{ mt: 5, fontSize: '35px' }}>SKILLS</Typography>
         <Box sx={{ width: '4.8rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />
       </Box>
-  
-       <Box sx={{
-        display: 'flex',
-        justifyCntent: ' center',
-        alignItems: 'center',
-        mt: '65px'
-      }}>
 
-        <div className="container__progressbars">
-          <Box sx={{
-            position: 'relative',
-            width: '165px',
-            height: '165px',
-            margin: '1em',
-            transform: 'rotate(-90deg)',
-            backgroundColor: 'white',
-            borderRadius: '50%',
-            boxShadow: 12
-          }}>
-            <svg className="progressbar__svg">
+      <div className={styles.container}>
+
+        <div className={styles.container__progressbars}>
+          <div className={styles.progressbar}>
+            <svg className={styles.progressbar__svg}>
               <circle cx="80" cy="80" r="70" className="progressbar__svg-circle circle-html "> </circle>
             </svg>
             <span className="progressbar__text shadow-html"><HtmlRoundedIcon sx={{ fontSize: '50px' }} /></span>
-          </Box>
+          </div>
+
+{/* 
           <Box sx={{
             position: 'relative',
             width: '165px',
@@ -65,9 +53,9 @@ export default function Skills() {
               <circle cx="80" cy="80" r="70" className="progressbar__svg-circle circle-html"> </circle>
             </svg>
             <span className="progressbar__text shadow-html"><JavascriptRoundedIcon sx={{ fontSize: '50px' }} /></span>
-          </Box>
+          </Box> */}
         </div>
-      </Box >
+      </div >
       <div id="main-container-social" className="main-container-social"></div>
     </Box>
   )
