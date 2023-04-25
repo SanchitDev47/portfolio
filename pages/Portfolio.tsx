@@ -4,6 +4,21 @@ import styled from 'styled-components';
 import React from 'react'
 
 export default function Portfolio() {
+
+  const PortfolioDetails = [
+    {
+      title: 'Product App',
+      img: 'https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1',
+      description: 'Best work experiance with sanchit Highly Skilled in frontEnd Techonology Dedicated person with their job and Highly enthusiast work they done with great optimistic way',
+      // Btnurl: null
+    },
+    {
+      title: 'Portfolio App',
+      img: 'https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1',
+      description: 'Best work experiance with sanchit Highly Skilled in frontEnd Techonology Dedicated person with their job and Highly enthusiast work they done with great optimistic way',
+      // Btnurl: null
+    },
+  ]
   return (
     <Box sx={{ m: '100px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
@@ -11,7 +26,7 @@ export default function Portfolio() {
         <Box sx={{ width: '8.8rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />
       </Box>
       <Box sx={{ display: 'flex', height: '300px', justifyContent: 'center' }}>
-        <Grid container spacing={3} sx={{ mt: 8, width: '70%', display: 'flex', justifyContent: 'space-evenly', flexDirection: 'row', alignItems: 'center' }}>
+        {PortfolioDetails.map((data) => <Grid container spacing={3} sx={{ mt: 8, width: '70%', display: 'flex', justifyContent: 'space-evenly', flexDirection: 'row', alignItems: 'center' }}>
           <Box
             component="img"
             sx={{
@@ -23,20 +38,21 @@ export default function Portfolio() {
               maxHeight: '193px'
             }}
             alt="The house from the offer."
-            src="https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1"
+            src={data.img}
           />
           <Box sx={{ display: 'flex', height: '90%', width: '38%', flexDirection: 'column', justifyContent: 'space-evenly', gap: '19px', }}>
             <Grid item sx={{ display: 'flex', width: '100%', flexDirection: 'column', justifyContent: 'space-evenly', gap: '25px' }}>
-              <Typography variant='h5'>Product app</Typography>
-              The product app manage all of business
-              requriment and such as product summary
-              and some more funcationality
+              <Typography variant='h5'>{data.title}</Typography>
+              {data.description}
             </Grid>
-            <DemoBtn>Demo<ArrowForwardIcon /></DemoBtn>
+            {/* <DemoBtn>Demo<ArrowForwardIcon /></DemoBtn> */}
           </Box>
         </Grid>
+        )}
       </Box>
     </Box>
+  )
+}
   )
 }
 
