@@ -17,14 +17,14 @@ export default function Service() {
       ]
     },
     {
-      Icon: <CodeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
+      Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
       Title: 'Graphic Designer',
       btndescription: [
         'sanchit', 'mohit', 'roshni'
       ]
     },
     {
-      Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
+      Icon: <CodeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
       Title: 'Front-End development',
       btndescription: [
         'sanchit', 'mohit', 'roshni'

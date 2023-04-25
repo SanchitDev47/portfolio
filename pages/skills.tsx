@@ -68,7 +68,7 @@ export default function Skills() {
           </Box>
         </div>
       </Box >
-      {/* <div id="main-container-social" className="main-container-social"></div> */}
+      <div id="main-container-social" className="main-container-social"></div>
     </Box>
   )
 }

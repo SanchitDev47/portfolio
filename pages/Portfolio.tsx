@@ -9,13 +9,13 @@ export default function Portfolio() {
     {
       title: 'Product App',
       img: 'https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1',
-      description: 'Best work experiance with sanchit Highly Skilled in frontEnd Techonology Dedicated person with their job and Highly enthusiast work they done with great optimistic way',
+      description: 'The product app manage all of business requriment and such as product summary and some more funcationality',
       // Btnurl: null
     },
     {
-      title: 'Portfolio App',
+      title: 'Product App',
       img: 'https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1',
-      description: 'Best work experiance with sanchit Highly Skilled in frontEnd Techonology Dedicated person with their job and Highly enthusiast work they done with great optimistic way',
+      description: 'The product app manage all of business requriment and such as product summary and some more funcationality',
       // Btnurl: null
     },
   ]
@@ -45,14 +45,12 @@ export default function Portfolio() {
               <Typography variant='h5'>{data.title}</Typography>
               {data.description}
             </Grid>
-            {/* <DemoBtn>Demo<ArrowForwardIcon /></DemoBtn> */}
+            <DemoBtn>Demo<ArrowForwardIcon /></DemoBtn>
           </Box>
         </Grid>
         )}
       </Box>
     </Box>
-  )
-}
   )
 }
 
