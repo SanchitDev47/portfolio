@@ -7,6 +7,38 @@ import PaletteIcon from '@mui/icons-material/Palette';
 import styled from 'styled-components';
 
 export default function Service() {
+
+  const ServiceDetails = [
+    {
+      Icon: <ModeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
+      Title: 'UI/UX Designer',
+      btndescription: [
+        'sanchit', 'mohit', 'roshni'
+      ]
+    },
+    {
+      Icon: <CodeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
+      Title: 'Graphic Designer',
+      btndescription: [
+        'sanchit', 'mohit', 'roshni'
+      ]
+    },
+    {
+      Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
+      Title: 'Front-End development',
+      btndescription: [
+        'sanchit', 'mohit', 'roshni'
+      ]
+
+    },
+    {
+      Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
+      Title: 'SEO',
+      btndescription: [
+        'sanchit', 'mohit', 'roshni'
+      ]
+    },
+  ]
   return (
     <Box sx={{ m: '100px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
@@ -19,14 +51,14 @@ export default function Service() {
         justifyContent: 'space-around',
       }}>
         <Grid container spacing={3} sx={{
-          width: '100%',
+          width: '120%',
           justifyContent: 'space-evenly',
           display: 'flex',
           mt: '80px',
           flexWrap: 'wrap'
         }}>
 
-          <Grid item sx={{
+          {ServiceDetails.map((data) => <Grid item sx={{
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'inherit',
@@ -38,42 +70,12 @@ export default function Service() {
             borderRadius: '15px',
             flexWrap: 'wrap'
           }}>
-            <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />
-            <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '38%' }}>Ui/Ux Designer</Typography>
+            {data.Icon}
+            <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '45%' }}>{data.Title}</Typography>
             <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
-          </Grid>
+          </Grid>)}
 
-          <Grid item sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'inherit',
-            alignItems: 'flex-start',
-            width: '265px',
-            height: '297px',
-            boxShadow: 12,
-            backgroundColor: 'white',
-            borderRadius: '15px'
-          }}>
-            <CodeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />
-            <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '43%' }}>Front-End Developer</Typography>
-            <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
-          </Grid>
 
-          <Grid item sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'inherit',
-            alignItems: 'flex-start',
-            width: '265px',
-            height: '297px',
-            boxShadow: 12,
-            backgroundColor: 'white',
-            borderRadius: '15px',
-          }}>
-            <ModeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />
-            <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '38%' }}>Graphic Designer</Typography>
-            <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
-          </Grid>
         </Grid>
       </Box>
     </Box>
