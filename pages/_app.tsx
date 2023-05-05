@@ -1,6 +1,8 @@
 import type { AppProps } from 'next/app'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import IndexApp from './indexApp'
+import ScrollButton from '../Common/Elements/ScrollToTop'
+import Footer from './Footer'
+// import IndexApp from './indexApp'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -25,11 +27,12 @@ const theme: ThemeInterface = {
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* <GlobalStyle /> */}
-      {/* <ThemeProvider theme={theme}> */}
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
       <Component {...pageProps} />
-      <IndexApp />
-      {/* </ThemeProvider> */}
+      <ScrollButton />
+      <Footer/>
+      </ThemeProvider>
     </>
   )
 }

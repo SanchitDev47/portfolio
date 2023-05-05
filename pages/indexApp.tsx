@@ -17,14 +17,14 @@ import Button from '@mui/material/Button';
 
 import Banner from './Banner';
 import Qualification from './Qualification';
-import Skills from './skills';
+// import Skills from './skills';
 import Service from './Service';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
 import About from './About';
 import Testmonials from './testmonials';
-// import CardSlider from './CardSlider';
+// import KeenSlider from './keenslider';
 
 interface Props {
     window?: () => Window;
@@ -38,26 +38,9 @@ interface Card {
 
 
 const drawerWidth = 240;
-const navItems = ['HOME', 'SKILLS', 'SERVICE', 'PORTFOLIO', 'TESTOMINALS', 'C0NTACT'];
+const navItems = ['HOME', 'SKILLS', 'SERVICE', 'PORTFOLIO', 'TESTOMINALS', 'CONTACT'];
 
 export default function IndexApp(props: Props) {
-    const cards: Card[] = [
-        {
-            title: 'Card 1',
-            description: 'This is the first card',
-            image: 'https://picsum.photos/200/300',
-        },
-        {
-            title: 'Card 2',
-            description: 'This is the second card',
-            image: 'https://picsum.photos/200/300',
-        },
-        {
-            title: 'Card 3',
-            description: 'This is the third card',
-            image: 'https://picsum.photos/200/300',
-        },
-    ];
 
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -74,7 +57,7 @@ export default function IndexApp(props: Props) {
             </Typography>
             <Divider />
             <List>
-                {navItems.map((item) => (
+                {navItems.map((item, idx) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
                             <ListItemText primary={item} />
@@ -141,13 +124,12 @@ export default function IndexApp(props: Props) {
             <Banner />
             <About />
             <Qualification />
-            <Skills />
+            {/* <Skills /> */}
             <Service />
             <Portfolio />
+            {/* <KeenSlider/> */}
             <Testmonials />
-            {/* <CardSlider cards={cards} /> */}
             <Contact />
-            <Footer />
         </>
     );
 }

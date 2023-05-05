@@ -25,8 +25,7 @@ const ScrollButton = () => {
   };
 
   useEffect(() => {
-    
-  window.addEventListener("scroll", toggleVisible);
+    window.addEventListener("scroll", toggleVisible);
   }, []);
 
   return (
@@ -37,10 +36,11 @@ const ScrollButton = () => {
             position: "fixed",
             bottom: "20px",
             right: "20px",
-            borderRadius: "50%",
-            px: 0.5,
-            py: 0.5,
-            backgroundColor: theme?.secondaryBlue,
+            borderRadius: "9px",
+            px: 0.2,
+            py: 0.2,
+            // backgroundColor: theme?.secondaryBlue,
+            backgroundColor: '#20C5FA',
           }}
         >
           <IconButton
@@ -50,7 +50,8 @@ const ScrollButton = () => {
               "&:hover": {
                 backgroundColor: 'transparent',
               },
-              color: theme?.primaryBlue,
+              // color: theme?.primaryBlue,
+              color: '#ffff',
             }}
           >
             <ArrowUpwardIcon />

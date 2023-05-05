@@ -1,16 +1,28 @@
-import React from 'react'
+// import React from 'react'
 import SendIcon from '@mui/icons-material/Send';
 import { Typography, Grid, Avatar } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import styled from 'styled-components';
-// import myImage from '';
-import Image from 'next/image'
+import myImage from '../public/Sanchit.jpg';
 
+
+import Image from 'next/image';
+import { makeStyles } from '@material-ui/core/styles';
+// import Avatar from '@material-ui/core/Avatar';
+
+const useStyles = makeStyles({
+  avatar: {
+    width: 250,
+    height: 250,
+  },
+});
 
 
 export default function Banner() {
+  const classes = useStyles();
+
   return (
     <>
       <Grid container spacing={3} sx={{
@@ -83,12 +95,15 @@ export default function Banner() {
           flexWrap: 'nowrap'
 
         }}>
-          <Avatar sx={{
-            height: { lg: '220px', md: '170px', xs: '160px' },
-            width: { lg: '220px', md: '170px', xs: '160px' }
-          }}
-            alt="sanchit" src="/public/Sanchit.jpg"
-          />
+          <Avatar className={classes.avatar}>
+            <Image
+              src={myImage}
+              alt=""
+              width={250}
+              height={250}
+              quality={100}
+            />
+          </Avatar>
         </Grid>
       </Grid>
     </>
