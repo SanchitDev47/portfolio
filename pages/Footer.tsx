@@ -8,7 +8,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function Footer() {
   return (
     <Box sx={{
-      background: '#F2FCFF', height: '300px', width: '100%',
+      background: '#F2FCFF',     
+      height: '300px', width: '100%',
     }}>
       <Grid container spacing={3} sx={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'column' }}>
         <Grid item sx={{ display: 'flex', width: '90%', flexDirection: 'row', justifyContent: 'space-between' }}>

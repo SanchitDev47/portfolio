@@ -22,7 +22,7 @@ export default function About() {
             minWidth: '372px'
           }}
           alt="The house from the offer."
-          src="https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1"
+          src=""
         />
         <Box sx={{ display: 'flex', height: '90%', width: ' 25%', flexDirection: 'column', justifyContent: 'flex-end' }}>
           <Grid item lg={12} md={10} sm={8} xs={6} sx={{ display: 'flex', width: '100%', height: '90%' }}>

@@ -29,6 +29,7 @@ export default function Banner() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        // background: 'black',
         background: '#F2FCFF',
         height: '490px',
         m: 0
@@ -66,7 +67,8 @@ export default function Banner() {
           <Typography sx={{
             paddingBottom: '10px',
             fontWeight: 600,
-            fontSize: { lg: '40%', md: '30%', xs: '25%' }
+            fontSize: { lg: '40%', md: '30%', xs: '25%' },
+            color: 'black'
           }}>
             FrontEnd | React Developer</Typography>
 
@@ -95,7 +97,7 @@ export default function Banner() {
           flexWrap: 'nowrap'
 
         }}>
-          <Avatar className={classes.avatar}>
+          {/* <Avatar className={classes.avatar}>
             <Image
               src={myImage}
               alt=""
@@ -103,7 +105,7 @@ export default function Banner() {
               height={250}
               quality={100}
             />
-          </Avatar>
+          </Avatar> */}
         </Grid>
       </Grid>
     </>
