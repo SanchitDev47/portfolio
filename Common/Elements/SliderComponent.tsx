@@ -1,13 +1,14 @@
-import { useEffect, useRef } from 'react';
+import { ReactNode, useEffect, useRef } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 
-// export type ItemSliderProps = {
-//    key: number | string;
+export type ItemSliderProps = {
+   children: ReactNode;
+   key: number | string;
+}
 
 
-// }
-function SliderComponent(props: any) {
+function SliderComponent(props: ItemSliderProps) {
     const sliderRef = useRef(null);
     const [slider, setSliderRef] = useKeenSlider();
 

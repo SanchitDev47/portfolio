@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import { Box, Grid, Typography } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download';
+import Image from 'next/image';
+import sanchiimg from '@/assets/sanchit.jpg'
 
 export default function About() {
   return (
@@ -12,7 +14,14 @@ export default function About() {
       </Box>
 
       <Grid container spacing={3} sx={{ mt: 8, display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '5%' }}>
-        <Box
+      <Image
+          src={sanchiimg}
+          // src='/assets/Sanchit.jpg'
+          width={500}
+          height={500}
+          alt="sacnhit"
+        />
+        {/* <Box
           component="img"
           sx={{
             borderRadius: '9px',
@@ -22,8 +31,8 @@ export default function About() {
             minWidth: '372px'
           }}
           alt="The house from the offer."
-          src=""
-        />
+          src="/public/Assets/sanchit.jpg"
+        /> */}
         <Box sx={{ display: 'flex', height: '90%', width: ' 25%', flexDirection: 'column', justifyContent: 'flex-end' }}>
           <Grid item lg={12} md={10} sm={8} xs={6} sx={{ display: 'flex', width: '100%', height: '90%' }}>
             <Typography variant='body1' sx={{ fontSize: '18px' }}>

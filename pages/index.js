@@ -16,14 +16,14 @@ function IndexOfApp() {
         <>
             <Banner />
             <About />
-{/* 
+
             <Qualification />
             <Skills />
             <Service />
             <Portfolio />
             <Testmonials />
             <Contact />
-            <Footer /> */}
+            <Footer />
         </>
     )
 }

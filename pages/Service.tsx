@@ -1,44 +1,10 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
 import React from 'react'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ModeIcon from '@mui/icons-material/Mode';
-import CodeIcon from '@mui/icons-material/Code';
-import PaletteIcon from '@mui/icons-material/Palette';
 import styled from 'styled-components';
+import { Service_OBJs } from '@/src/constants';
 
 export default function Service() {
-
-  const ServiceDetails = [
-    {
-      Icon: <ModeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-      Title: 'UI/UX Designer',
-      btndescription: [
-        'sanchit', 'mohit', 'roshni'
-      ]
-    },
-    {
-      Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-      Title: 'Graphic Designer',
-      btndescription: [
-        'sanchit', 'mohit', 'roshni'
-      ]
-    },
-    {
-      Icon: <CodeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-      Title: 'Front-End development',
-      btndescription: [
-        'sanchit', 'mohit', 'roshni'
-      ]
-
-    },
-    {
-      Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-      Title: 'SEO',
-      btndescription: [
-        'sanchit', 'mohit', 'roshni'
-      ]
-    },
-  ]
   return (
     <Box sx={{ m: '100px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
@@ -58,7 +24,7 @@ export default function Service() {
           flexWrap: 'wrap'
         }}>
 
-          {ServiceDetails.map((data) => <Grid item sx={{
+          {Service_OBJs.map((data) => <Grid item sx={{
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'inherit',

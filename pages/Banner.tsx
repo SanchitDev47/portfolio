@@ -25,7 +25,7 @@ export default function Banner() {
 
   return (
     <>
-      <Grid container spacing={3} sx={{
+      <Grid container sx={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

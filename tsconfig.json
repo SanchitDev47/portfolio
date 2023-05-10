@@ -30,6 +30,12 @@
       ],
       "@/styles/*": [
         "styles/*"
+      ],
+      "@/src/*": [
+        "src/*"
+      ],
+      "@/Assets/*": [
+        "Assets/*"
       ]
     }
   },
@@ -38,7 +44,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "pages/skills.tsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -2,24 +2,24 @@ $color-black: hsl(0, 0%, 5%);
 $color-color: hsl(0, 0%, 100%);
 
 $color-html: hsl(15, 100%, 60%);
-$color-css: hsl(200, 100%, 60%);
-$color-scss: hsl(300, 100%, 60%);
-$color-js: hsl(60, 100%, 60%);
-$color-ts: hsl(220, 100%, 60%);
-$color-node: hsl(110, 100%, 60%);
-$color-react: hsl(180, 100%, 60%);
-$color-angular: hsl(0, 100%, 60%);
-$color-vue: hsl(145, 100%, 60%);
+// $color-css: hsl(200, 100%, 60%);
+// $color-scss: hsl(300, 100%, 60%);
+// $color-js: hsl(60, 100%, 60%);
+// $color-ts: hsl(220, 100%, 60%);
+// $color-node: hsl(110, 100%, 60%);
+// $color-react: hsl(180, 100%, 60%);
+// $color-angular: hsl(0, 100%, 60%);
+// $color-vue: hsl(145, 100%, 60%);
 
 $porcent-html: 90;
-$porcent-css: 55;
-$porcent-scss: 70;
-$porcent-js: 80;
-$porcent-ts: 55;
-$porcent-node: 30;
-$porcent-react: 12;
-$porcent-angular: 5;
-$porcent-vue: 2;
+// $porcent-css: 55;
+// $porcent-scss: 70;
+// $porcent-js: 80;
+// $porcent-ts: 55;
+// $porcent-node: 30;
+// $porcent-react: 12;
+// $porcent-angular: 5;
+// $porcent-vue: 2;
 
 @function strokeDashoffset($num) {
     @return 440 - (440 * $num) / 100;
@@ -37,10 +37,10 @@ $porcent-vue: 2;
 }
 
 .container {
-        display: flex;
-        justify-content: cetner;
-        align-items: center;
-        margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
 }
 
 .progressbar {
@@ -59,7 +59,7 @@ $porcent-vue: 2;
     height: 100%;
 }
 
-.progressbar__svg-circle {
+.progressbar__svg .circle {
     width: 100%;
     height: 100%;
     fill: none;
@@ -76,6 +76,7 @@ $porcent-vue: 2;
         animation: anim_circle-html 1s ease-in-out forwards;
     }
 }
+
 
 .progressbar__text {
     position: absolute;
