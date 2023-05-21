@@ -21,25 +21,28 @@ export default function Service() {
           justifyContent: 'space-evenly',
           display: 'flex',
           mt: '80px',
-          flexWrap: 'wrap'
+          flexWrap: 'wrap',
+
         }}>
 
-          {Service_OBJs.map((data) => <Grid item sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'inherit',
-            alignItems: 'flex-start',
-            width: '265px',
-            height: '297px',
-            boxShadow: 12,
-            backgroundColor: 'white',
-            borderRadius: '15px',
-            flexWrap: 'wrap'
-          }}>
-            {data.Icon}
-            <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '45%' }}>{data.Title}</Typography>
-            <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
-          </Grid>)}
+          {Service_OBJs.map((item: any, idx: number) =>
+            <Grid item key={idx} sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'inherit',
+              alignItems: 'flex-start',
+              width: '265px',
+              height: '297px',
+              boxShadow: 12,
+              mt: 5,
+              backgroundColor: 'white',
+              borderRadius: '15px',
+              flexWrap: 'wrap'
+            }}>
+              {item.Icon}
+              <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '45%' }}>{item.Title}</Typography>
+              <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
+            </Grid>)}
 
 
         </Grid>
