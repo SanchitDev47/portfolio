@@ -16,7 +16,6 @@ function IndexOfApp() {
         <>
             <Banner />
             <About />
-
             <Qualification />
             <Skills />
             <Service />

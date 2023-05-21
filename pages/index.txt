@@ -1,0 +1,20 @@
+   <Grid container spacing={2}>
+      {isSmallScreen ? (
+        
+
+        <Grid item xs={12}>
+          <CardComponent />
+        </Grid>
+      ) : (
+        
+        
+        <>
+          <Grid item xs={12} sm={6}>
+            <CardComponent />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <CardComponent />
+          </Grid>
+        </>
+      )}
+    </Grid>

@@ -10,7 +10,7 @@ export const Testmonials_OBJs = [
     Type: 'BSE Student',
     Description: 'Best work experiance with sanchit Highly Skilled in frontEnd Techonology Dedicated person with their job and Highly enthusiast work they done with great optimistic way',
     Rating: 4,
-    ImgUrl: 'public/Assets/niharika.jpg'
+    // ImgUrl: 'public/Assets/niharika.jpg'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const Testmonials_OBJs = [
     Type: 'Full-Stack Developer',
     Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis',
     Rating: 3,
-    ImgUrl: '/public/Assets/mohit.jpg'
+    // ImgUrl: '/public/Assets/mohit.jpg'
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const Testmonials_OBJs = [
     Type: 'Sr.Software developer',
     Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis',
     Rating: 3,
-    ImgUrl: '/public/Assets/vaishnavi.jpg',
+    // ImgUrl: '/public/Assets/vaishnavi.jpg',
   },
   {
     id: 4,
@@ -34,7 +34,31 @@ export const Testmonials_OBJs = [
     Type: 'Front-End Developer',
     Description: 'Your solution that was elegant, efficient and User-friendly.You were always available to answer questions provide guidance and it was an absolute pleasure working with you❤',
     Rating: 5,
-    ImgUrl: '@/Assets/rushita.jpg'
+    // ImgUrl: '@/Assets/rushita.jpg',
+  },
+  {
+    id: 5,
+    Name: 'Rushita Joshi',
+    Type: 'Front-End Developer',
+    Description: 'Your solution that was elegant, efficient and User-friendly.You were always available to answer questions provide guidance and it was an absolute pleasure working with you❤',
+    Rating: 5,
+    // ImgUrl: '@/Assets/rushita.jpg',
+  },
+  {
+    id: 6,
+    Name: 'Rushita Joshi',
+    Type: 'Front-End Developer',
+    Description: 'Your solution that was elegant, efficient and User-friendly.You were always available to answer questions provide guidance and it was an absolute pleasure working with you❤',
+    Rating: 5,
+    // ImgUrl: '@/Assets/rushita.jpg',
+  },
+  {
+    id: 7,
+    Name: 'Rushita Joshi',
+    Type: 'Front-End Developer',
+    Description: 'Your solution that was elegant, efficient and User-friendly.You were always available to answer questions provide guidance and it was an absolute pleasure working with you❤',
+    Rating: 5,
+    // ImgUrl: '@/Assets/rushita.jpg',
   },
 
 ]
@@ -70,33 +94,18 @@ export const Service_OBJs = [
   },
 ]
 
-export const portfolio_OBJs = [
+export const PortfolioDetails = [
   {
     id: 1,
-    Title: '',
-    buttonURL: '',
-    Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quis',
-    ImgUrl: '',
+    title: 'Product App',
+    img: 'https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1',
+    description: 'The product app manage all of business requriment and such as product summary and some more funcationality',
+    // Btnurl: null
   },
-  {
-    id: 2,
-    Title: '',
-    buttonURL: '',
-    Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quis',
-    ImgUrl: '',
-  },
-  {
-    id: 3,
-    Title: '',
-    buttonURL: '',
-    Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quis',
-    ImgUrl: '',
-  },
-  {
-    id: 4,
-    Title: '',
-    buttonURL: '',
-    Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quis',
-    ImgUrl: '',
-  },
+  // {
+  //   title: 'Product App',
+  //   img: 'https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1',
+  //   description: 'The product app manage all of business requriment and such as product summary and some more funcationality',
+  //   // Btnurl: null
+  // },
 ]
