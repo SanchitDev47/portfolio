@@ -1,44 +1,10 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
 import React from 'react'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ModeIcon from '@mui/icons-material/Mode';
-import CodeIcon from '@mui/icons-material/Code';
-import PaletteIcon from '@mui/icons-material/Palette';
 import styled from 'styled-components';
+import { Service_OBJs } from '@/src/constants';
 
 export default function Service() {
-
-  const ServiceDetails = [
-    {
-      Icon: <ModeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-      Title: 'UI/UX Designer',
-      btndescription: [
-        'sanchit', 'mohit', 'roshni'
-      ]
-    },
-    {
-      Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-      Title: 'Graphic Designer',
-      btndescription: [
-        'sanchit', 'mohit', 'roshni'
-      ]
-    },
-    {
-      Icon: <CodeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-      Title: 'Front-End development',
-      btndescription: [
-        'sanchit', 'mohit', 'roshni'
-      ]
-
-    },
-    {
-      Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-      Title: 'SEO',
-      btndescription: [
-        'sanchit', 'mohit', 'roshni'
-      ]
-    },
-  ]
   return (
     <Box sx={{ m: '100px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
@@ -55,25 +21,28 @@ export default function Service() {
           justifyContent: 'space-evenly',
           display: 'flex',
           mt: '80px',
-          flexWrap: 'wrap'
+          flexWrap: 'wrap',
+
         }}>
 
-          {ServiceDetails.map((data) => <Grid item sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'inherit',
-            alignItems: 'flex-start',
-            width: '265px',
-            height: '297px',
-            boxShadow: 12,
-            backgroundColor: 'white',
-            borderRadius: '15px',
-            flexWrap: 'wrap'
-          }}>
-            {data.Icon}
-            <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '45%' }}>{data.Title}</Typography>
-            <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
-          </Grid>)}
+          {Service_OBJs.map((item: any, idx: number) =>
+            <Grid item key={idx} sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'inherit',
+              alignItems: 'flex-start',
+              width: '265px',
+              height: '297px',
+              boxShadow: 12,
+              mt: 5,
+              backgroundColor: 'white',
+              borderRadius: '15px',
+              flexWrap: 'wrap'
+            }}>
+              {item.Icon}
+              <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '45%' }}>{item.Title}</Typography>
+              <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
+            </Grid>)}
 
 
         </Grid>

@@ -13,18 +13,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { BrandingWatermark } from '@material-ui/icons';
 
 
-import Banner from './Banner';
-import Qualification from './Qualification';
-// import Skills from './skills';
-import Service from './Service';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Footer from './Footer';
-import About from './About';
-import Testmonials from './testmonials';
-// import KeenSlider from './keenslider';
+
+
 
 interface Props {
     window?: () => Window;
@@ -38,7 +31,7 @@ interface Card {
 
 
 const drawerWidth = 240;
-const navItems = ['HOME', 'SKILLS', 'SERVICE', 'PORTFOLIO', 'TESTOMINALS', 'CONTACT'];
+const navItems = ['SKILLS', 'SERVICE', 'PORTFOLIO', 'TESTOMINALS', 'QUALIFICATION', 'CONTACT'];
 
 export default function IndexApp(props: Props) {
 
@@ -121,15 +114,6 @@ export default function IndexApp(props: Props) {
                     </Drawer>
                 </Box>
             </Box>
-            <Banner />
-            <About />
-            <Qualification />
-            {/* <Skills /> */}
-            <Service />
-            <Portfolio />
-            {/* <KeenSlider/> */}
-            <Testmonials />
-            <Contact />
         </>
     );
 }

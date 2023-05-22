@@ -8,28 +8,29 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function Footer() {
   return (
     <Box sx={{
-      background: '#F2FCFF', height: '300px', width: '100%',
+      background: '#F2FCFF',
+      height: '300px', width: '100%',
     }}>
       <Grid container spacing={3} sx={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'column' }}>
         <Grid item sx={{ display: 'flex', width: '90%', flexDirection: 'row', justifyContent: 'space-between' }}>
-          <Box>
+          <Box sx={{ ml: '6%' }}>
             <Typography
               variant="h1"
               component="div"
-              sx={{ flexGrow: 1, mx: { lg: 22, md: 15, sm: 1 }, color: '#20C5FA', fontWeight: 600, fontSize: '22px', display: { xs: 'none', sm: 'block' } }}
+              sx={{ display: 'flex', flexGrow: 1, mx: { lg: 22, md: 15, sm: 1 }, color: '#20C5FA', fontWeight: 600, fontSize: '22px', }}
             >
               Sanchit
             </Typography>
             <Typography
               variant="h1"
               component="div"
-              sx={{ flexGrow: 1, mx: { lg: 22, md: 15, sm: 1 }, color: 'black', fontSize: '16px', display: 'flex' }}
+              sx={{ display: 'flex', flexGrow: 1, mx: { lg: 22, md: 15, sm: 1 }, color: 'black', fontSize: '16px' }}
             >
               Front-End Developer
             </Typography>
           </Box>
 
-          <Box sx={{ display: 'flex', justifyContent: 'space-evenly', width: '15%' }}>
+          <Box sx={{ display: 'flex', justifyContent: 'space-evenly', gap: '30px' }}>
             <a href="https://www.linkedin.com/in/sanchit-barjibhe-600aba1a7/"><LinkedInIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
             <a href="https://www.instagram.com/astubborne/"><InstagramIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
             <a href="https://twitter.com/astubborne"><TwitterIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
