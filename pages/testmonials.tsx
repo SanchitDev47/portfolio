@@ -23,7 +23,7 @@ export default function Testmonials() {
         <Typography variant='h6' sx={{ mt: 5, fontSize: '35px' }}>TESTMONIALS</Typography>
         <Box sx={{ width: '8.8rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />
       </Box>
-      {/* <Grid container spacing={3} sx={{ mt: 8, height: '300px', width: '90%', display: 'flex', flexDirection: { lg: 'row', sm: 'column' }, justifyContent: 'center' }}>
+      <Grid container spacing={3} sx={{ mt: 8, height: '300px', width: '90%', display: 'flex', flexDirection: { lg: 'row', sm: 'column' }, justifyContent: 'center' }}>
         <Swiper
           spaceBetween={50}
           slidesPerView={2}
@@ -69,7 +69,7 @@ export default function Testmonials() {
             </SwiperSlide>
           )}
         </Swiper>
-      </Grid > */}
+      </Grid >
     </Box >
   )
 }

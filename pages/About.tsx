@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import { Box, Grid, Typography } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download';
+import Image from 'next/image';
+// import sanchiimg from '@/assets/sanchit.jpg'
 
 export default function About() {
   return (
@@ -11,54 +13,44 @@ export default function About() {
         <Box sx={{ width: '8.8rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />
       </Box>
 
-
-
-      <Grid container sx={{ mt: 8, display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '5%' }}>
+      <Grid container spacing={3} sx={{ mt: 8, display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '5%' }}>
         <Box
           component="img"
           sx={{
             borderRadius: '9px',
             border: 'black',
             boxShadow: 12,
-            maxHeight: '203px',
-            minWidth: '372px'
+            width: { lg: '371px', md: '344px', xs: '330px' },
+            height: { lg: '193px', md: '219px', xs: '193px' },
           }}
-          alt="The house from thdfdsdfe offer."
-          src="/Assets/001.webp"
-        // src="https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1"
+          alt="The house from the offer."
+          src="/public/Assets/sanchit.jpg"
         />
-
-        <Grid>
-          <Grid item sx={{ width: '25%', flexDirection: 'column', justifyContent: 'flex-end' }}>
+        <Grid lg={3} md={5} sm={5} xs={5} sx={{ display: 'flex', height: '90%', width: ' 30%', flexDirection: 'column', mt: { lg: 0, md: 0, sm: 0, xs: '30px' },alignItems: {lg:'flex-start',md:'flex-start',sm:'flex-start',xs:'center'}, textAlign: { lg: 'left', md: 'left', sm: 'left', xs: 'center' }, justifyContent: 'flex-end' }}>
+          <Grid item sx={{ display: 'flex', width: '100%', height: '90%' }}>
             <Typography variant='body1' sx={{ fontSize: '18px' }}>
               Web Developer with extensive knowledge the
               year of experiance,working in web technology
               and UI /UX delivering quality work</Typography>
           </Grid>
 
-          <Box sx={{
-            display: 'flex',
-            width: '5%',
-            flexDirection: 'column',
-            justifyContent: 'flex-end',
-            flexWrap: 'wrap'
-          }}>
-            <Box>
-              +02
+          <Grid item sx={{ mt: 3.4, ml: 0, mr: 0, mb:5, display: 'flex', justifyContent: 'space-between', gap: '30px', alignItems: 'flex-start', width: '92%', }}>
+            <Grid sx={{ display: 'flex', width: '20%', justifyContent: 'center', flexWrap: 'wrap', textAlign: 'center' }}>
+              <Box component='span' sx={{ color: 'black', fontWeight: 'bold' }}>02+</Box>
               Years
               Experience
-            </Box>
-            <Box>
-              +02
-              Years
-              Experience
-            </Box>
-            <Box>
-              +02
-              Years
-              Experience
-            </Box>
-          </Box>
+            </Grid>
+            <Grid sx={{ display: 'flex', width: '20%', justifyContent: 'center', flexWrap: 'wrap', textAlign: 'center' }}>
+              <Box component='span' sx={{ color: 'black', fontWeight: 'bold' }}>02+</Box>
+              completed
+              Project
+            </Grid>
+            <Grid sx={{ display: 'flex', width: '20%', justifyContent: 'center', flexWrap: 'wrap', textAlign: 'center' }}>
+              <Box component='span' sx={{ color: 'black', fontWeight: 'bold' }}>02+</Box>
+              company
+              worked
+            </Grid>
+          </Grid>
           <Box>
             <CvBtn>Download CV  <DownloadIcon sx={{ fontSize: '19px' }} /></CvBtn>
           </Box>

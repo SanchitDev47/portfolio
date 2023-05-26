@@ -1,8 +1,11 @@
 import ModeIcon from '@mui/icons-material/Mode';
 import CodeIcon from '@mui/icons-material/Code';
 import PaletteIcon from '@mui/icons-material/Palette';
+import JavascriptRoundedIcon from '@mui/icons-material/JavascriptRounded';
+import HtmlRoundedIcon from '@mui/icons-material/HtmlRounded';
+import CssRoundedIcon from '@mui/icons-material/CssRounded';
 
-
+//
 export const Testmonials_OBJs = [
   {
     id: 1,
@@ -93,7 +96,6 @@ export const Service_OBJs = [
     ]
   },
 ]
-
 export const PortfolioDetails = [
   {
     id: 1,
@@ -109,3 +111,37 @@ export const PortfolioDetails = [
   //   // Btnurl: null
   // },
 ]
+export const SkillsCircle = [
+  {
+    id: 1,
+    progress: 77,
+    icon: <HtmlRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
+  },
+  {
+    id: 2,
+    progress: 77,
+    icon: <CssRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
+  },
+  {
+    id: 3,
+    progress: 85,
+    icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
+  },
+  {
+    id: 4,
+    progress: 95,
+    icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
+
+  },
+  {
+    id: 5,
+    progress: 95,
+    icon:<JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
+  },
+  {
+    id: 6,
+    progress: 95,
+    icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
+  },
+]
+//

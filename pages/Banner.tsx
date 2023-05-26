@@ -47,7 +47,7 @@ export default function Banner() {
           <a href="https://github.com/SanchitDev47"><GitHubIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
         </Grid>
 
-        <Grid item lg={7.2} md={7} sm={7} xs={3} sx={{
+        <Grid item lg={7.2} md={7} sm={9} xs={12} sx={{
           display: 'flex',
           flexDirection: 'column',
           fontSize: '64px',
@@ -81,7 +81,7 @@ export default function Banner() {
           }}>
             Highly motiveated desgin and developement producing a quality work
           </Typography>
-          <Grid item xs={12}>
+          <Grid item lg={12} xs={12}>
             <ContactBtn>Contact Me<SendIcon sx={{
               fontSize: '20px',
               display: 'flex',
