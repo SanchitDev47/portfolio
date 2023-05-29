@@ -4,8 +4,8 @@ import PaletteIcon from '@mui/icons-material/Palette';
 import JavascriptRoundedIcon from '@mui/icons-material/JavascriptRounded';
 import HtmlRoundedIcon from '@mui/icons-material/HtmlRounded';
 import CssRoundedIcon from '@mui/icons-material/CssRounded';
+import LanguageIcon from '@mui/icons-material/Language';
 
-//
 export const Testmonials_OBJs = [
   {
     id: 1,
@@ -63,36 +63,56 @@ export const Testmonials_OBJs = [
     Rating: 5,
     // ImgUrl: '@/Assets/rushita.jpg',
   },
+  {
+    id: 7,
+    Name: 'Pratiksha bhosale',
+    Type: 'Front-End Developer',
+    Description: 'Your solution that was elegant, efficient and User-friendly.You were always available to answer questions provide guidance and it was an absolute pleasure working with you❤',
+    Rating: 5,
+    // ImgUrl: '@/Assets/rushita.jpg',
+  },
 
 ]
 export const Service_OBJs = [
   {
     Icon: <ModeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
     Title: 'UI/UX Designer',
-    btndescription: [
-      'sanchit', 'mohit', 'roshni'
+    ServiceDetails: [
+      'sanchit',
+      'mohit',
+      'roshni',
+      
     ]
   },
   {
     Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
     Title: 'Graphic Designer',
-    btndescription: [
-      'sanchit', 'mohit', 'roshni'
+    ServiceDetails: [
+      'sanchit',
+      'mohit',
+      'roshni',
+      
     ]
   },
   {
     Icon: <CodeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
     Title: 'Front-End development',
-    btndescription: [
-      'sanchit', 'mohit', 'roshni'
+    ServiceDetails: [
+      'sanchit',
+      'mohit',
+      'roshni',
+      
     ]
 
   },
   {
-    Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-    Title: 'SEO',
-    btndescription: [
-      'sanchit', 'mohit', 'roshni'
+    Icon: <LanguageIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
+    Title: 'Search Engine Optimization',
+    ServiceDetails: [
+      'sanchit',
+      'mohit',
+      'roshni',
+      
     ]
   },
 ]
@@ -102,7 +122,7 @@ export const PortfolioDetails = [
     title: 'Product App',
     img: 'https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1',
     description: 'The product app manage all of business requriment and such as product summary and some more funcationality',
-    // Btnurl: null
+    demourl: 'https://www.instagram.com/astubborne/'
   },
   // {
   //   title: 'Product App',
@@ -124,19 +144,19 @@ export const SkillsCircle = [
   },
   {
     id: 3,
-    progress: 85,
+    progress: 89,
     icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
   },
   {
     id: 4,
-    progress: 95,
+    progress: 75,
     icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
 
   },
   {
     id: 5,
-    progress: 95,
-    icon:<JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
+    progress: 60,
+    icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
   },
   {
     id: 6,
@@ -144,4 +164,3 @@ export const SkillsCircle = [
     icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
   },
 ]
-//

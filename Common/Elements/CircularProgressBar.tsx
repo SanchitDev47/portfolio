@@ -68,10 +68,10 @@ const CircularProgressBar = ({ percentage, icon }) => {
     //   </Box>
     // </>
     <>
-      <div style={{ position: 'relative' }}>
-        <canvas ref={canvasRef} width={180} height={180} />
-        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-          <Icon sx={{ display: 'inline', height:'20', width:'20'}}>{icon}</Icon>
+      <div style={{ position: 'relative', flexWrap:'wrap', justifyContent:'space-around' }}>
+          <canvas ref={canvasRef} width={180} height={180} />
+          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+            <Icon sx={{ display: 'inline', height: '20', width: '20' }}>{icon}</Icon>
         </div>
       </div>
     </>

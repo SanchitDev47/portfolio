@@ -1,11 +1,11 @@
-import * as React from 'react';
 import { Avatar, Box, Grid, Typography, Rating } from '@mui/material'
+import * as React from 'react';
 import { Testmonials_OBJs } from '@/src/constants';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SubHeader from '@/Common/Elements/SubHeader';
 import 'swiper/css';
 
 export default function Testmonials() {
-
   const [data, setData] = React.useState(Testmonials_OBJs);
   const UpdateRating = (itemId: any, newRating: any) => {
     const updatedData = data.map(item => {
@@ -16,18 +16,13 @@ export default function Testmonials() {
     })
     setData(updatedData)
   }
-
   return (
-    <Box sx={{ m: '100px' }}>
-      <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-        <Typography variant='h6' sx={{ mt: 5, fontSize: '35px' }}>TESTMONIALS</Typography>
-        <Box sx={{ width: '8.8rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />
-      </Box>
-      <Grid container spacing={3} sx={{ mt: 8, height: '300px', width: '90%', display: 'flex', flexDirection: { lg: 'row', sm: 'column' }, justifyContent: 'center' }}>
+    <Box>
+      <SubHeader>TESTMONIALS</SubHeader>
+      <Grid container sx={{ mt: 8, height: '300px', width: '90%', display: 'flex', flexDirection: { lg: 'row', sm: 'column' }, justifyContent: 'center' }}>
         <Swiper
-          spaceBetween={50}
-          slidesPerView={2}
-        >
+          spaceBetween={30}
+          slidesPerView={2} >
           {Testmonials_OBJs.map((item: any, idx: number) =>
             <SwiperSlide key={idx}>
               <Box sx={{
@@ -43,7 +38,6 @@ export default function Testmonials() {
                 height: ' 140px'
               }}>
                 <Box sx={{ display: 'flex', width: '80%', flexDirection: 'row', justifyContent: 'space-between' }}>
-
                   <Grid item lg={3.5}>
                     <Avatar sx={{ width: 48, height: 48 }} src={item.ImgUrl}></Avatar>
                   </Grid>

@@ -5,14 +5,13 @@ import MailIcon from '@mui/icons-material/Mail';
 import { Box } from '@mui/system'
 import React from 'react'
 import styled from 'styled-components';
+import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function Contact() {
   return (
     <Box sx={{ m: '100px' }}>
-      <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-        <Typography variant='h6' sx={{ mt: 5, fontSize: '35px' }}>CONTACT</Typography>
-        <Box sx={{ width: '6.8rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />
-      </Box>
+      
+      <SubHeader>CONTACT</SubHeader>
       <Grid container
         sx={{
           mt: 12,

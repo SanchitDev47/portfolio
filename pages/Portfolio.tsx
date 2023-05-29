@@ -3,24 +3,21 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import styled from 'styled-components';
 import React from 'react'
 import { PortfolioDetails } from '@/src/constants';
+import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function Portfolio() {
-
-
-  return (
-    <Box sx={{ m: '5%', height: '500px' }}>
-      <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-        <Typography variant='h6' sx={{ mt: 5, fontSize: '35px' }}>PORTFOLIO</Typography>
-        <Box sx={{ width: '8.8rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />
-      </Box>
-
+ return (
+    <>
+      <SubHeader>PORTFOLIO</SubHeader>
       <Box sx={{ display: 'flex', mt: 10, justifyContent: 'center', alignItems: 'center' }}>
-        {/* <Box sx={{ , height: '300px', justifyContent: 'center', alignItems: 'center' }}> */}
+        
         {PortfolioDetails.map((item: any, idx: number) =>
           <Grid key={idx} container sx={{
             width: '100%',
             display: 'flex',
-            justifyContent: 'center', flexDirection: 'row', alignItems: 'flex-start'
+            justifyContent: 'center',
+            flexDirection: 'row',
+            alignItems: 'flex-start'
           }}>
             <Grid item lg={4} md={5.6} sm={7} xs={9}>
               <Box
@@ -58,14 +55,13 @@ export default function Portfolio() {
                 <Typography variant='h5'>{item.title}</Typography>
                 <Typography variant='subtitle1'>{item.description}</Typography>
               </Box>
-              <DemoBtn>Demo<ArrowForwardIcon /></DemoBtn>
+              <DemoBtn onClick={item.demourl}>Demo<ArrowForwardIcon /></DemoBtn>
             </Grid>
           </Grid>
         )
         }
-        {/* </Box> */}
       </Box >
-    </Box >
+    </>
   )
 }
 

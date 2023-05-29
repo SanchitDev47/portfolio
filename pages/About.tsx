@@ -3,17 +3,31 @@ import styled from 'styled-components';
 import { Box, Grid, Typography } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download';
 import Image from 'next/image';
-// import sanchiimg from '@/assets/sanchit.jpg'
+import SubHeader from '@/Common/Elements/SubHeader';
+// import fs from 'fs';
+// import path from 'path';
 
 export default function About() {
+  // const handleDownload = async () => {
+  //   const filePath = '/path/to/your/pdf/file.pdf';
+  //   try {
+  //     const file = await fs.promises.readFile(filePath);
+  //     const fileName = path.basename(filePath);
+  //     const fileBuffer = Buffer.from(file);
+  //     // Set the response headers
+  //     res.setHeader('Content-Type', 'application/pdf');
+  //     res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
+  //     res.setHeader('Content-Length', fileBuffer.length);
+  //     // Send the file content as the response
+  //     res.send(fileBuffer);
+  //   } catch (error) {
+  //     console.error('Error while downloading file:', error);
+  //   }
+  // };
   return (
     <>
-      <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-        <Typography variant='h6' sx={{ mt: 5, fontSize: '35px' }}>ABOUT ME</Typography>
-        <Box sx={{ width: '8.8rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />
-      </Box>
-
-      <Grid container spacing={3} sx={{ mt: 8, display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '5%' }}>
+      <SubHeader>ABOUT ME</SubHeader>
+      <Grid container sx={{ mt: 8, display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '5%' }}>
         <Box
           component="img"
           sx={{
@@ -26,7 +40,7 @@ export default function About() {
           alt="The house from the offer."
           src="/public/Assets/sanchit.jpg"
         />
-        <Grid lg={3} md={5} sm={5} xs={5} sx={{ display: 'flex', height: '90%', width: ' 30%', flexDirection: 'column', mt: { lg: 0, md: 0, sm: 0, xs: '30px' },alignItems: {lg:'flex-start',md:'flex-start',sm:'flex-start',xs:'center'}, textAlign: { lg: 'left', md: 'left', sm: 'left', xs: 'center' }, justifyContent: 'flex-end' }}>
+        <Grid lg={3} md={5} sm={5} xs={5} sx={{ display: 'flex', height: '90%', width: ' 30%', flexDirection: 'column', mt: { lg: 0, md: 0, sm: 0, xs: '30px' }, alignItems: { lg: 'flex-start', md: 'flex-start', sm: 'flex-start', xs: 'center' }, textAlign: { lg: 'left', md: 'left', sm: 'left', xs: 'center' }, justifyContent: 'flex-end' }}>
           <Grid item sx={{ display: 'flex', width: '100%', height: '90%' }}>
             <Typography variant='body1' sx={{ fontSize: '18px' }}>
               Web Developer with extensive knowledge the
@@ -34,7 +48,7 @@ export default function About() {
               and UI /UX delivering quality work</Typography>
           </Grid>
 
-          <Grid item sx={{ mt: 3.4, ml: 0, mr: 0, mb:5, display: 'flex', justifyContent: 'space-between', gap: '30px', alignItems: 'flex-start', width: '92%', }}>
+          <Grid item sx={{ mt: 3.4, ml: 0, mr: 0, mb: 5, display: 'flex', justifyContent: 'space-between', gap: '30px', alignItems: 'flex-start', width: '92%', }}>
             <Grid sx={{ display: 'flex', width: '20%', justifyContent: 'center', flexWrap: 'wrap', textAlign: 'center' }}>
               <Box component='span' sx={{ color: 'black', fontWeight: 'bold' }}>02+</Box>
               Years
