@@ -24,7 +24,7 @@ interface Props {
     window?: () => Window;
 }
 const drawerWidth = 240;
-const navItems = [  'ABOUT', 'QUALIFICATION','SKILLS','SERVICE','PORTFOLIO', 'CONTACT'];
+const navItems = ['ABOUT', 'QUALIFICATION', 'SKILLS', 'SERVICE', 'PORTFOLIO', 'CONTACT'];
 
 export default function IndexApp(props: Props) {
 
@@ -38,7 +38,7 @@ export default function IndexApp(props: Props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2, cursor: 'pointer' }}>
+            <Typography variant="h6" sx={{ my: 2, cursor: 'pointer', color: '#20C5FA', fontWeight: 600, fontSize: '20px' }}>
                 Sanchit
             </Typography>
             <Divider />
@@ -46,7 +46,7 @@ export default function IndexApp(props: Props) {
                 {navItems.map((item, idx) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton key={idx} sx={{ textAlign: 'center' }}>
-                            <Link key={idx} spy={true} to={item.toLowerCase()} offset={50} smooth={true} duration={100}>
+                            <Link key={idx} to={item.toLowerCase()} smooth={true} duration={500}>
                                 <ListItemText primary={item} >
                                     {item}
                                 </ListItemText>

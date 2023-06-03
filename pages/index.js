@@ -9,36 +9,39 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Testmonials from './Testmonials';
 import Footer from './Footer';
+import { Box } from '@mui/material';
+
 
 function IndexOfApp() {
 
   return (
     <>
       <Banner />
-      <PageNavigation id={'about'}>
-        <About />
-      </PageNavigation>
+      <Box sx={{ m: '2%' }}>
+        <PageNavigation id={'about'}>
+          <About />
+        </PageNavigation>
 
-      <PageNavigation id={'qualification'}>
-        <Qualification />
-      </PageNavigation>
+        <PageNavigation id={'qualification'}>
+          <Qualification />
+        </PageNavigation>
 
-      <PageNavigation id={'skills'}>
-        <Skills />
-      </PageNavigation>
+        <PageNavigation id={'skills'}>
+          <Skills />
+        </PageNavigation>
 
-      <PageNavigation id={'service'}>
-        <Service />
-      </PageNavigation>
+        <PageNavigation id={'service'}>
+          <Service />
+        </PageNavigation>
 
-      <PageNavigation id={'portfolio'}>
-        <Portfolio />
-      </PageNavigation>
+        <PageNavigation id={'portfolio'}>
+          <Portfolio />
+        </PageNavigation>
 
-      <PageNavigation id={'contact'}>
-        <Contact />
-      </PageNavigation>
-
+        <PageNavigation id={'contact'}>
+          <Contact />
+        </PageNavigation>
+      </Box>
       <Footer />
     </>
   )

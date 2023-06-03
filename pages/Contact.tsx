@@ -9,12 +9,11 @@ import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function Contact() {
   return (
-    <Box sx={{ m: '50px' }}>
-      
+    <Box>
       <SubHeader>CONTACT</SubHeader>
       <Grid container
         sx={{
-          mt: 12,
+          paddingTop: '50px', paddingBottom: '50px',
           width: '100%',
           display: 'flex',
           flexDirection: 'row',

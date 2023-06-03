@@ -58,7 +58,7 @@ const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ percentage, i
 
   return (
     <>
-      <div style={{ position: 'relative', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+      <div style={{ marginTop:'2%', marginBottom:'2%', position: 'relative', flexWrap: 'wrap', justifyContent: 'space-around', paddingTop: '35px', paddingBottom: '35px' }}>
         <canvas ref={canvasRef} width={180} height={180} />
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
           <Icon sx={{ display: 'inline', height: '20', width: '20' }}>{icon}</Icon>

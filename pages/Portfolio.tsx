@@ -6,11 +6,11 @@ import { PortfolioDetails } from '@/src/constants';
 import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function Portfolio() {
- return (
+  return (
     <>
       <SubHeader>PORTFOLIO</SubHeader>
-      <Box sx={{ display: 'flex', mt: 10, justifyContent: 'center', alignItems: 'center' }}>
-        
+      <Box sx={{ display: 'flex', paddingTop: '50px', paddingBottom: '50px', justifyContent: 'center', alignItems: 'center' }}>
+
         {PortfolioDetails.map((item: any, idx: number) =>
           <Grid key={idx} container sx={{
             width: '100%',

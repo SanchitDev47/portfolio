@@ -25,9 +25,9 @@ export default function About() {
   //   }
   // };
   return (
-    <Box sx={{m: '50px'}}>
+    <Box>
       <SubHeader>ABOUT ME</SubHeader>
-      <Grid container sx={{ mt: 8, display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '5%' }}>
+      <Grid container sx={{ paddingTop: '50px', paddingBottom: '50px', display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '5%' }}>
         <Box
           component="img"
           sx={{

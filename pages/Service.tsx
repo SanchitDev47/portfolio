@@ -8,14 +8,15 @@ import { DetailPopup } from '@/Common/Elements/DetailsPopup';
 
 export default function Service() {
   return (
-    <Box sx={{ m: 10 }}>
+    <>
       <SubHeader>SERVICE</SubHeader>
-      <Grid container spacing={3} sx={{
+      <Grid container sx={{
         width: '100%',
         justifyContent: 'space-evenly',
         display: 'flex',
         m: 0,
         flexWrap: 'wrap',
+        paddingTop: '50px', paddingBottom: '50px',
       }}>
         {Service_OBJs.map((item: any, idx: number) =>
           <Grid item key={idx} sx={{
@@ -26,7 +27,8 @@ export default function Service() {
             width: '265px',
             height: '297px',
             boxShadow: 12,
-            mt: 5,
+            padding: '25px',
+            mt:5,
             gap: '10%',
             backgroundColor: 'white',
             borderRadius: '15px',
@@ -37,7 +39,7 @@ export default function Service() {
             <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
           </Grid>)}
       </Grid>
-    </Box>
+    </>
   )
 }
 const ViewmoreBtn = styled.button`

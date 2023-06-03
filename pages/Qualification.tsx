@@ -10,9 +10,9 @@ import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function Qualification() {
     return (
-        <Box sx={{m: '50px'}}>
+        <Box >
             <SubHeader>QUALIFICATION</SubHeader>
-            <Timeline position="alternate">
+            <Timeline position="alternate" sx={{ paddingTop: '50px', paddingBottom: '50px',}}>
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineDot sx={{ background: '#20C5FA' }} />
