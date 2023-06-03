@@ -1,5 +1,6 @@
-import * as React from 'react';
+import React, { Component, ReactNode } from 'react';
 import AppBar from '@mui/material/AppBar';
+import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
@@ -13,25 +14,17 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { BrandingWatermark } from '@material-ui/icons';
-
-
+import { Link } from 'react-scroll';
+import Skills from 'pages/skills';
+import PageNavigation from '../Elements/PageNavigation';
 
 
 
 interface Props {
     window?: () => Window;
 }
-
-interface Card {
-    title: string;
-    description: string;
-    image: string;
-}
-
-
 const drawerWidth = 240;
-const navItems = ['SKILLS', 'SERVICE', 'PORTFOLIO', 'TESTOMINALS', 'QUALIFICATION', 'CONTACT'];
+const navItems = [  'ABOUT', 'QUALIFICATION','SKILLS','SERVICE','PORTFOLIO', 'CONTACT'];
 
 export default function IndexApp(props: Props) {
 
@@ -52,8 +45,12 @@ export default function IndexApp(props: Props) {
             <List>
                 {navItems.map((item, idx) => (
                     <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
+                        <ListItemButton key={idx} sx={{ textAlign: 'center' }}>
+                            <Link key={idx} spy={true} to={item.toLowerCase()} offset={50} smooth={true} duration={100}>
+                                <ListItemText primary={item} >
+                                    {item}
+                                </ListItemText>
+                            </Link>
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -87,10 +84,12 @@ export default function IndexApp(props: Props) {
                             Sanchit
                         </Typography>
                         <Box sx={{ mr: { lg: 15, md: 2, sm: 2, xs: 1 }, display: { xs: 'none', sm: 'block' } }}>
-                            {navItems.map((item) => (
-                                <Button key={item} sx={{ mr: { lg: 1.7, md: 2, sm: 0, xs: 1 }, color: 'black', fontWeight: '20px' }}>
-                                    {item}
-                                </Button>
+                            {navItems.map((title: any, idx: any) => (
+                                <Link key={idx} spy={true} to={title.toLowerCase()} smooth={true} duration={500}>
+                                    <Button key={idx} sx={{ mr: { lg: 1.7, md: 2, sm: 0, xs: 1 }, color: 'black', fontWeight: '20px' }}>
+                                        {title}
+                                    </Button>
+                                </Link>
                             ))}
                         </Box>
                     </Toolbar>
@@ -117,3 +116,4 @@ export default function IndexApp(props: Props) {
         </>
     );
 }
+

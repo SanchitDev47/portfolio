@@ -6,9 +6,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import styled from 'styled-components';
 import myImage from '../public/Sanchit.jpg';
-
-
 import Image from 'next/image';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import { makeStyles } from '@material-ui/core/styles';
 // import Avatar from '@material-ui/core/Avatar';
 
@@ -29,10 +28,9 @@ export default function Banner() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        // background: 'black',
         background: '#F2FCFF',
         height: '490px',
-        m: 0
+        mt: 0
       }}>
 
         <Grid item lg={0.5} md={0.6} sm={1} xs={2} sx={{
@@ -43,7 +41,7 @@ export default function Banner() {
           fontSize: '30%'
         }}>
           <a href="https://www.linkedin.com/in/sanchit-barjibhe-600aba1a7/"><LinkedInIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
-          <a href="https://www.instagram.com/astubborne/"><InstagramIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
+          <a href="https://www.instagram.com/astubborne/"><TwitterIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }}/></a>
           <a href="https://github.com/SanchitDev47"><GitHubIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
         </Grid>
 

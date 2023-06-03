@@ -1,12 +1,18 @@
 import { Box } from '@mui/material';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState, } from 'react';
 import Icon from "@mui/material/Icon"
 import * as Icons from '@mui/icons-material';
+import { animateScroll as scroll } from 'react-scroll';
 
+interface CircularProgressBarProps {
+  percentage: number;
+  icon: string;
+  // reload: () => void;
+}
 
-
-const CircularProgressBar = ({ percentage, icon }) => {
+const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ percentage, icon, }) => {
   const canvasRef = useRef(null);
+  const [progress, setProgress] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -42,36 +48,20 @@ const CircularProgressBar = ({ percentage, icon }) => {
         context.strokeShadow = 'rgba(0, 0, 0, 0.0)';
         context.stroke()
 
-        // if (!IconComponent) {
-        //   return null;
-        // }
-
-        // //Icon svg of canvas
-        // context.beginPath();
-        // context.drawImage(canvasIcon, 0, 0)
-
-        // context.fill()
-
-
         currentAngle += 0.03; // Adjust the animation speed here
-        requestAnimationFrame(animate);
+        requestAnimationFrame(animate)
       }
     };
-    animate();
+    ;
+    animate()
   }, [percentage]);
 
   return (
-    // <>
-    //   <Box sx={{ mt: '10%', display: 'flex', justifyContent: 'space-evenly' }}>
-    //     <canvas ref={canvasRef} width={150} height={150} />
-    //     <IconComponent fontSize={size} style={{ color }} />
-    //   </Box>
-    // </>
     <>
-      <div style={{ position: 'relative', flexWrap:'wrap', justifyContent:'space-around' }}>
-          <canvas ref={canvasRef} width={180} height={180} />
-          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-            <Icon sx={{ display: 'inline', height: '20', width: '20' }}>{icon}</Icon>
+      <div style={{ position: 'relative', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+        <canvas ref={canvasRef} width={180} height={180} />
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+          <Icon sx={{ display: 'inline', height: '20', width: '20' }}>{icon}</Icon>
         </div>
       </div>
     </>

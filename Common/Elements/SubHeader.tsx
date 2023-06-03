@@ -6,7 +6,7 @@ export type SubHeaderProps = {
 }
 export default function SubHeader(props: SubHeaderProps) {
     return (
-        <Box sx={{ m: '100px' }}>
+        <Box sx={{ m: '50px' }}>
             <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', }}>
                 <Typography variant='h6' sx={{ mt: 5, fontSize: '35px', lineHeight: 2 }}>{props.children}</Typography>
                 <Box sx={{ width: '6rem', height: '5.8px', borderRadius: '11px', background: '#20C5FA' }} />

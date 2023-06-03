@@ -8,16 +8,7 @@ import { DetailPopup } from '@/Common/Elements/DetailsPopup';
 
 export default function Service() {
   return (
-    <>
-      {/* <DetailPopup
-        callBackOnAccept={undefined}
-        title={''}
-        element={''}
-        open={false}
-        callBackOnReject={null}>
-        Sanchit
-      </DetailPopup> */}
-
+    <Box sx={{ m: 10 }}>
       <SubHeader>SERVICE</SubHeader>
       <Grid container spacing={3} sx={{
         width: '100%',
@@ -39,13 +30,14 @@ export default function Service() {
             gap: '10%',
             backgroundColor: 'white',
             borderRadius: '15px',
-            flexWrap: 'wrap' }}>
+            flexWrap: 'wrap'
+          }}>
             {item.Icon}
             <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '63%' }}>{item.Title}</Typography>
             <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
           </Grid>)}
       </Grid>
-    </>
+    </Box>
   )
 }
 const ViewmoreBtn = styled.button`

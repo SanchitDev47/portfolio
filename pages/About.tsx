@@ -25,7 +25,7 @@ export default function About() {
   //   }
   // };
   return (
-    <>
+    <Box sx={{m: '50px'}}>
       <SubHeader>ABOUT ME</SubHeader>
       <Grid container sx={{ mt: 8, display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '5%' }}>
         <Box
@@ -70,7 +70,7 @@ export default function About() {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Box>
   )
 }
 

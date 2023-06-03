@@ -10,7 +10,7 @@ import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function Qualification() {
     return (
-        <>
+        <Box sx={{m: '50px'}}>
             <SubHeader>QUALIFICATION</SubHeader>
             <Timeline position="alternate">
                 <TimelineItem>
@@ -83,6 +83,6 @@ export default function Qualification() {
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
-        </>
+        </Box>
     )
 }

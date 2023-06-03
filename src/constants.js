@@ -5,6 +5,11 @@ import JavascriptRoundedIcon from '@mui/icons-material/JavascriptRounded';
 import HtmlRoundedIcon from '@mui/icons-material/HtmlRounded';
 import CssRoundedIcon from '@mui/icons-material/CssRounded';
 import LanguageIcon from '@mui/icons-material/Language';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact, faNode } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faReact, faNode);
 
 export const Testmonials_OBJs = [
   {
@@ -81,7 +86,7 @@ export const Service_OBJs = [
       'sanchit',
       'mohit',
       'roshni',
-      
+
     ]
   },
   {
@@ -91,7 +96,7 @@ export const Service_OBJs = [
       'sanchit',
       'mohit',
       'roshni',
-      
+
     ]
   },
   {
@@ -101,7 +106,7 @@ export const Service_OBJs = [
       'sanchit',
       'mohit',
       'roshni',
-      
+
     ]
 
   },
@@ -112,7 +117,7 @@ export const Service_OBJs = [
       'sanchit',
       'mohit',
       'roshni',
-      
+
     ]
   },
 ]
@@ -150,17 +155,12 @@ export const SkillsCircle = [
   {
     id: 4,
     progress: 75,
-    icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
+    icon: <FontAwesomeIcon icon={faReact} style={{ color: "#20C5FA", height: '50px' }} />
 
   },
   {
     id: 5,
     progress: 60,
-    icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
-  },
-  {
-    id: 6,
-    progress: 95,
-    icon: <JavascriptRoundedIcon sx={{ fontSize: 50, color: '#20C5FA' }} />
+    icon: <FontAwesomeIcon icon={faNode} style={{ color: "#20C5FA", height: '50px' }} />
   },
 ]

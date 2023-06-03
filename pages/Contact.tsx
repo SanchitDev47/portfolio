@@ -9,7 +9,7 @@ import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function Contact() {
   return (
-    <Box sx={{ m: '100px' }}>
+    <Box sx={{ m: '50px' }}>
       
       <SubHeader>CONTACT</SubHeader>
       <Grid container
