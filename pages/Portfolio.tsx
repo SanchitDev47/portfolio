@@ -24,7 +24,7 @@ export default function Portfolio() {
                 component="img"
                 sx={{
                   borderRadius: '12px',
-                  boxShadow: 15,
+                  boxShadow: '3px 39px 72px rgba(111, 194, 240, 0.2)',
                   borderColor: 'white',
                   border: '5px',
                   width: { lg: '371px', xs: '330px' },

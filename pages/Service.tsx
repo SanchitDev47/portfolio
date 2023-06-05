@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import styled from 'styled-components';
 import { Service_OBJs } from '@/src/constants';
@@ -7,9 +7,29 @@ import SubHeader from '@/Common/Elements/SubHeader';
 import { DetailPopup } from '@/Common/Elements/DetailsPopup';
 
 export default function Service() {
+  const [dialog, setdialog] = useState(false)
+  const [popupdeatil, setPopupdeatil] = useState<any[]>([]);
+
+
+
+
+  const handlePopUpEvent = (idx: number) => {
+    setdialog(!dialog)
+    setPopupdeatil(Service_OBJs[idx]);
+  }
   return (
     <>
-      <SubHeader>SERVICE</SubHeader>
+      
+       {popupdeatil && (
+          <DetailPopup
+            key={idx}
+            callBackOnAccept={handlePopUpEvent}
+            title={item.title}
+            element={item.popupinfo}
+            open={dialog} callBackOnReject={handlePopUpEvent} />
+        ))}
+
+      < SubHeader > SERVICE</SubHeader >
       <Grid container sx={{
         width: '100%',
         justifyContent: 'space-evenly',
@@ -26,18 +46,19 @@ export default function Service() {
             alignItems: 'flex-start',
             width: '265px',
             height: '297px',
-            boxShadow: 12,
+            boxShadow: '3px 39px 72px rgba(111, 194, 240, 0.3)',
             padding: '25px',
-            mt:5,
+            mt: 5,
             gap: '10%',
             backgroundColor: 'white',
             borderRadius: '15px',
             flexWrap: 'wrap'
           }}>
             {item.Icon}
-            <Typography variant='h5' sx={{ flexWrap: 'wrap', width: '63%' }}>{item.Title}</Typography>
-            <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
-          </Grid>)}
+            <Typography variant='h6' sx={{ flexWrap: 'wrap', width: '63%' }}>{item.title}</Typography>
+            <ViewmoreBtn key={idx} onClick={() => handlePopUpEvent(idx)}>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
+          </Grid>
+        )}
       </Grid>
     </>
   )

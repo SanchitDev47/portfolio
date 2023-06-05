@@ -34,10 +34,10 @@ const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ percentage, i
         context.beginPath();
         context.arc(x, y, radius, 0, Math.PI * 2, false);
         context.fillStyle = 'white';
-        context.shadowOffsetX = 2;
-        context.shadowOffsetY = 2;
-        context.shadowBlur = 12;
-        context.shadowColor = 'rgba(0, 0, 0, 0.3)';
+        context.shadowOffsetX = 5;
+        context.shadowOffsetY = 15;
+        context.shadowBlur = 50;
+        context.shadowColor = 'rgba(111, 194, 240, 0.3)';
         context.fill();
 
         // Draw progress circle
@@ -45,7 +45,7 @@ const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ percentage, i
         context.arc(x, y, radius, startAngle, currentAngle, false);
         context.lineWidth = lineWidth;
         context.strokeStyle = '#20C5FA';
-        context.strokeShadow = 'rgba(0, 0, 0, 0.0)';
+        context.strokeShadow = 'none';
         context.stroke()
 
         currentAngle += 0.03; // Adjust the animation speed here
@@ -58,7 +58,7 @@ const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ percentage, i
 
   return (
     <>
-      <div style={{ marginTop:'2%', marginBottom:'2%', position: 'relative', flexWrap: 'wrap', justifyContent: 'space-around', paddingTop: '35px', paddingBottom: '35px' }}>
+      <div style={{ marginTop: '2%', marginBottom: '2%', position: 'relative', flexWrap: 'wrap', justifyContent: 'space-around', paddingTop: '35px', paddingBottom: '35px' }}>
         <canvas ref={canvasRef} width={180} height={180} />
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
           <Icon sx={{ display: 'inline', height: '20', width: '20' }}>{icon}</Icon>

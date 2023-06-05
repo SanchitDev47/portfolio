@@ -33,7 +33,7 @@ export default function About() {
           sx={{
             borderRadius: '9px',
             border: 'black',
-            boxShadow: 12,
+            boxShadow: '3px 39px 72px rgba(111, 194, 240, 0.2)',
             width: { lg: '371px', md: '344px', xs: '330px' },
             height: { lg: '193px', md: '219px', xs: '193px' },
           }}

@@ -81,45 +81,46 @@ export const Testmonials_OBJs = [
 export const Service_OBJs = [
   {
     Icon: <ModeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-    Title: 'UI/UX Designer',
-    ServiceDetails: [
-      'sanchit',
-      'mohit',
-      'roshni',
-
+    title: 'UI/UX Designer',
+    popupinfo: [
+      'I develop the User Interface',
+      'Web Page Development',
+      'I create ux element Interactions',
+      'I position your comapny Brand'
     ]
   },
   {
     Icon: <PaletteIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-    Title: 'Graphic Designer',
-    ServiceDetails: [
-      'sanchit',
-      'mohit',
-      'roshni',
-
+    title: 'Graphic Designer',
+    popupinfo: [
+      'kjlskdfjs',
+      'asdkfjsdkf',
+      'asdfkldjf',
+      'sdlkfjsd'
     ]
   },
   {
     Icon: <CodeIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-    Title: 'Front-End development',
-    ServiceDetails: [
-      'sanchit',
-      'mohit',
-      'roshni',
-
+    title: 'Front-End development',
+    popupinfo: [
+      'Debugging and Troubleshooting',
+      'I develop Responsive application device friendly',
+      'Back-End APIs Integrating',
+      'Data Binding',
     ]
 
   },
-  {
-    Icon: <LanguageIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
-    Title: 'Search Engine Optimization',
-    ServiceDetails: [
-      'sanchit',
-      'mohit',
-      'roshni',
+  // {
+  //   Icon: <LanguageIcon sx={{ fontSize: '35px', color: '#20C5FA' }} />,
+  //   title: 'Search Engine Optimization',
+  //   popupinfo: [
+  //     'kjlskdfjs',
+  //     'asdkfjsdkf',
+  //     'asdfkldjf',
+  //     'sdlkfjsd'
 
-    ]
-  },
+  //   ]
+  // },
 ]
 export const PortfolioDetails = [
   {
