@@ -29,6 +29,7 @@
     "react": "^18.2.0",
     "react-customizable-progressbar": "^1.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.44.3",
     "react-scroll": "^1.8.9",
     "react-svg": "^16.1.11",
     "styled-components": "^5.3.5",

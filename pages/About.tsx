@@ -4,26 +4,19 @@ import { Box, Grid, Typography } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download';
 import Image from 'next/image';
 import SubHeader from '@/Common/Elements/SubHeader';
-// import fs from 'fs';
-// import path from 'path';
 
 export default function About() {
-  // const handleDownload = async () => {
-  //   const filePath = '/path/to/your/pdf/file.pdf';
-  //   try {
-  //     const file = await fs.promises.readFile(filePath);
-  //     const fileName = path.basename(filePath);
-  //     const fileBuffer = Buffer.from(file);
-  //     // Set the response headers
-  //     res.setHeader('Content-Type', 'application/pdf');
-  //     res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
-  //     res.setHeader('Content-Length', fileBuffer.length);
-  //     // Send the file content as the response
-  //     res.send(fileBuffer);
-  //   } catch (error) {
-  //     console.error('Error while downloading file:', error);
-  //   }
-  // };
+  const downloadCvUrl = 'http://localhost:3000/Assets/SanchitBarjibhe.pdf';
+
+  const downloadCvEvent = (Url: string) => {
+    const fileName = Url.split('/').pop();
+    const createTag = document.createElement('a');
+    createTag.href = Url;
+    createTag.setAttribute('download', fileName);
+    document.body.appendChild(createTag)
+    createTag.click();
+    createTag.remove();
+  }
   return (
     <Box>
       <SubHeader>ABOUT ME</SubHeader>
@@ -66,7 +59,7 @@ export default function About() {
             </Grid>
           </Grid>
           <Box>
-            <CvBtn>Download CV  <DownloadIcon sx={{ fontSize: '19px' }} /></CvBtn>
+            <CvBtn onClick={() => downloadCvEvent(downloadCvUrl)}>Download CV <DownloadIcon sx={{ fontSize: '19px' }} /></CvBtn>
           </Box>
         </Grid>
       </Grid>

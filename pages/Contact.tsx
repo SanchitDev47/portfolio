@@ -6,8 +6,22 @@ import { Box } from '@mui/system'
 import React from 'react'
 import styled from 'styled-components';
 import SubHeader from '@/Common/Elements/SubHeader';
+import { useForm } from "react-hook-form";
 
 export default function Contact() {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+    setValue,
+    reset,
+  } = useForm<any>({});
+
+  const onSubmit = (VisitorContactData: Object) => {
+    setValue('visitorname', '');
+    setValue('subject', '');
+    setValue('email', '');
+  };
   return (
     <Box>
       <SubHeader>CONTACT</SubHeader>
@@ -29,22 +43,38 @@ export default function Contact() {
         </Grid>
 
         <Grid item lg={5} sx={{ display: 'flex', flexDirection: 'column', height: '20%', justifyContent: 'flex-start', gap: '30px', alignItems: { lg: 'flex-end', xs: 'center' } }}>
-          <Box sx={{ display: 'flex', flexDirection: { lg: 'row', xs: 'column' }, justifyContent: 'space-between', gap: '30px', width: '465px' }}>
-            <TextField sx={{ width: { lg: '50%', xs: '100%' } }} id="outlined-basic" label="Name" variant="outlined" />
-            <TextField sx={{ width: { lg: '50%', xs: '100%' } }} id="outlined-basic" label="Email" variant="outlined" />
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', gap: '30px', width: '465px' }}>
+            <Grid>
+              <TextField sx={{ width: '100%', }} InputLabelProps={{ shrink: true }} {...register("visitorName", { required: "First Name is Required" })} id="outlined-basic" name="FirstName" label="First Name" variant="outlined" />
+              {errors.visitorName && <p role="alert" style={{ margin: '0px', paddingTop: '7px', color: "red" }}>{`${errors.visitorName.message}`}</p>}
+            </Grid>
+            <Grid>
+              <TextField sx={{ width: '100%', }} InputLabelProps={{ shrink: true }} {...register("subject", { required: "Subject is Required" })} id="outlined-basic" name="subject" label="Suject" variant="outlined" />
+              {errors.subject && <p role="alert" style={{ margin: '0px', paddingTop: '7px', color: "red" }}>{`${errors.subject.message}`}</p>}
+            </Grid>
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
-            <TextField sx={{ width: 468 }} id="outlined-basic" label="Subject" variant="outlined" />
-            <TextareaAutosize
-              aria-label="empty textarea"
-              placeholder="Message"
-              minRows={3}
-              style={{ maxWidth: 466, minWidth: 466, maxHeight: '90px', minHeight: '90px' }}
-            />
+
+            <Grid>
+              <TextField sx={{ width: '100%', }} InputLabelProps={{ shrink: true }} {...register("email", { required: "Email is Required" })} id="outlined-basic" name="email" label="Email" variant="outlined" />
+              {errors.subject && <p role="alert" style={{ margin: '0px', paddingTop: '7px', color: "red" }}>{`${errors.subject.message}`}</p>}
+            </Grid>
+
+            <Grid>
+              <TextareaAutosize
+                aria-label="empty textarea"
+                placeholder="Message"
+                minRows={3}
+                name='visitorQury'
+                {...register("visitorQury", { required: "Write A Message for inquiry" })}
+                style={{ maxWidth: 466, minWidth: 466, maxHeight: '90px', minHeight: '90px' }}
+              />
+              {errors.visitorQury && <p role="alert" style={{ margin: '0px', paddingTop: '7px', color: "red" }}>{`${errors.visitorQury.message}`}</p>}
+            </Grid>
           </Box>
           <Box>
-            <SubmitBtn>Submit</SubmitBtn>
+            <SubmitBtn type="submit" onClick={handleSubmit(onSubmit)}>Submit</SubmitBtn>
           </Box>
         </Grid>
       </Grid>
@@ -70,3 +100,7 @@ const SubmitBtn = styled.button`
   &:hover{
   }
 `;
+const Error = styled.div`
+  color: red;
+`;
+

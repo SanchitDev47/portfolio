@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <AppLayout>
         <Component {...pageProps} />
         <ScrollButton />
-       
+
       </AppLayout>
     </>
   )

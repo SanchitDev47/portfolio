@@ -12,7 +12,7 @@ export default function Qualification() {
     return (
         <Box >
             <SubHeader>QUALIFICATION</SubHeader>
-            <Timeline position="alternate" sx={{ paddingTop: '50px', paddingBottom: '50px',}}>
+            <Timeline position="alternate" sx={{ paddingTop: '50px', paddingBottom: '50px', }}>
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineDot sx={{ background: '#20C5FA' }} />

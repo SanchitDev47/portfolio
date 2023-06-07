@@ -13,21 +13,21 @@ export default function Service() {
 
 
 
-  const handlePopUpEvent = (idx: number) => {
-    setdialog(!dialog)
-    setPopupdeatil(Service_OBJs[idx]);
-  }
+  // const handlePopUpEvent = (idx: number) => {
+  //   setdialog(!dialog)
+  //   setPopupdeatil(Service_OBJs[idx]);
+  // }
   return (
     <>
-      
-       {popupdeatil && (
+
+      {/* {popupdeatil && (
           <DetailPopup
             key={idx}
             callBackOnAccept={handlePopUpEvent}
             title={item.title}
             element={item.popupinfo}
             open={dialog} callBackOnReject={handlePopUpEvent} />
-        ))}
+        ))} */}
 
       < SubHeader > SERVICE</SubHeader >
       <Grid container sx={{
@@ -56,7 +56,7 @@ export default function Service() {
           }}>
             {item.Icon}
             <Typography variant='h6' sx={{ flexWrap: 'wrap', width: '63%' }}>{item.title}</Typography>
-            <ViewmoreBtn key={idx} onClick={() => handlePopUpEvent(idx)}>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
+            {/* <ViewmoreBtn key={idx} onClick={() => handlePopUpEvent(idx)}>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn> */}
           </Grid>
         )}
       </Grid>
