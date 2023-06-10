@@ -10,6 +10,8 @@ import Image from 'next/image';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { makeStyles } from '@material-ui/core/styles';
 // import Avatar from '@material-ui/core/Avatar';
+import TypewriterComponent from '@/Common/Elements/TypewriterComponent';
+import { Options } from 'typewriter-effect';
 
 const useStyles = makeStyles({
   avatar: {
@@ -17,6 +19,15 @@ const useStyles = makeStyles({
     height: 250,
   },
 });
+const typewriterOptions: Partial<Options> = {
+  strings: [
+    'ReactJS developer',
+    'Front-End Web developer',
+    'NextJS developer',
+  ], 
+  autoStart: true,
+  loop:true,
+};
 
 
 export default function Banner() {
@@ -41,7 +52,7 @@ export default function Banner() {
           fontSize: '30%'
         }}>
           <a href="https://www.linkedin.com/in/sanchit-barjibhe-600aba1a7/"><LinkedInIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
-          <a href="https://www.instagram.com/astubborne/"><TwitterIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }}/></a>
+          <a href="https://www.instagram.com/astubborne/"><TwitterIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
           <a href="https://github.com/SanchitDev47"><GitHubIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
         </Grid>
 
@@ -68,7 +79,8 @@ export default function Banner() {
             fontSize: { lg: '40%', md: '30%', xs: '25%' },
             color: 'black'
           }}>
-            FrontEnd | React Developer</Typography>
+          <TypewriterComponent typewriterOptions={typewriterOptions} />
+          </Typography>
 
           <Typography variant='caption' sx={{
             paddingBottom: '30px',

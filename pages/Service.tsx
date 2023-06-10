@@ -56,7 +56,7 @@ export default function Service() {
           }}>
             {item.Icon}
             <Typography variant='h6' sx={{ flexWrap: 'wrap', width: '63%' }}>{item.title}</Typography>
-            {/* <ViewmoreBtn key={idx} onClick={() => handlePopUpEvent(idx)}>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn> */}
+            <ViewmoreBtn>VIEW MORE<ArrowForwardIcon /></ViewmoreBtn>
           </Grid>
         )}
       </Grid>

@@ -3,16 +3,17 @@ import PageNavigation from '@/Common/Elements/PageNavigation';
 import About from './About'
 import Banner from './Banner';
 import Qualification from './Qualification';
-import Skills from './Skills';
 import Service from './Service';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Skills from './Skills';
 import Testmonials from './Testmonials';
 import Footer from './Footer';
 import { Box } from '@mui/material';
 
 
-function IndexOfApp() {
+
+function index() {
 
   return (
     <>
@@ -47,4 +48,4 @@ function IndexOfApp() {
   )
 }
 
-export default IndexOfApp;
+export default index;

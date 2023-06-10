@@ -13,9 +13,22 @@ const nextConfig = {
     unoptimized: true
   },
   sassOptions: {
-    // fiber: false,
     includePaths: [path.join(__dirname, 'styles')],
-    // prependData: `@import "styles/Circle";`
+  },
+
+  generateBuildId: async () => {
+    // This ensures a unique build ID for every build
+    return 'build-' + Date.now();
+  },
+  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
+    if (distDir) {
+      return defaultPathMap;
+    }
+
+    // Manually specify the output directory and index.html file
+    return {
+      '/': { pages: '/index.js' },
+    };
   },
 }
 

@@ -15,10 +15,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-scroll';
-import Skills from 'pages/skills';
-import PageNavigation from '../Elements/PageNavigation';
-
-
 
 interface Props {
     window?: () => Window;

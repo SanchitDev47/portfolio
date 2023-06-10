@@ -43,8 +43,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "pages/skills.tsx"  ],
+    ".next/types/**/*.ts",
+    "src/pages/skills.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]
