@@ -2,6 +2,7 @@ import React, { } from "react";
 import Header from "./UI/Header";
 import { Box } from "@mui/material";
 import { theme } from "./theme";
+import Footer from "./UI/Footer";
 export default function AppLayout(props: any) {
   return (
     <div
@@ -32,6 +33,7 @@ export default function AppLayout(props: any) {
         >
           {props.children}
         </div>
+        <Footer />
       </div>
     </div>
   );

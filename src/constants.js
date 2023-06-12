@@ -125,10 +125,10 @@ export const Service_OBJs = [
 export const PortfolioDetails = [
   {
     id: 1,
-    title: 'Product App',
-    img: 'https://i0.wp.com/marvel.com.sa/wp-content/uploads/2022/07/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png?resize=2048%2C1074&ssl=1',
+    title: 'Portfolio App',
+    img: 'public/Assets/Portfolio',
     description: 'The product app manage all of business requriment and such as product summary and some more funcationality',
-    demourl: 'https://www.instagram.com/astubborne/'
+    demourl: 'https://portfoliosanchit.web.app/'
   },
   // {
   //   title: 'Product App',

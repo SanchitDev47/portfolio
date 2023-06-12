@@ -8,7 +8,6 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Skills from './Skills';
 import Testmonials from './Testmonials';
-import Footer from './Footer';
 import { Box } from '@mui/material';
 
 
@@ -43,7 +42,6 @@ function index() {
           <Contact />
         </PageNavigation>
       </Box>
-      <Footer />
     </>
   )
 }

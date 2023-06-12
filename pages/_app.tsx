@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import ScrollButton from '@/Common/Elements/ScrollToTop'
-import Footer from './Footer'
+import Footer from '@/Common/UI/Footer'
 import AppLayout from '@/Common/Applayout'
 
 const GlobalStyle = createGlobalStyle`
@@ -31,7 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <AppLayout>
         <Component {...pageProps} />
         <ScrollButton />
-
       </AppLayout>
     </>
   )

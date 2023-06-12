@@ -55,7 +55,7 @@ export default function Portfolio() {
                 <Typography variant='h5'>{item.title}</Typography>
                 <Typography variant='subtitle1'>{item.description}</Typography>
               </Box>
-              <DemoBtn onClick={item.demourl}>Demo<ArrowForwardIcon /></DemoBtn>
+              <a href={item.demourl}><DemoBtn>Demo<ArrowForwardIcon /></DemoBtn></a>
             </Grid>
           </Grid>
         )
@@ -69,6 +69,7 @@ const DemoBtn = styled.button`
   display: flex;
   background: #20C5FA;
   color: white;
+  text-decoration: none;
   border-radius: 8px;
   border: none;
   display: flex;

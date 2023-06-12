@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import styled from 'styled-components';
-import myImage from '../public/Sanchit.jpg';
+import myImage from '../public/Assets/Sanchit.jpg';
 import Image from 'next/image';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { makeStyles } from '@material-ui/core/styles';
@@ -24,9 +24,9 @@ const typewriterOptions: Partial<Options> = {
     'ReactJS developer',
     'Front-End Web developer',
     'NextJS developer',
-  ], 
+  ],
   autoStart: true,
-  loop:true,
+  loop: true,
 };
 
 
@@ -38,10 +38,11 @@ export default function Banner() {
       <Grid container sx={{
         display: 'flex',
         alignItems: 'center',
+        flexDirection: { lg: 'row', md: 'row',sm: 'grid', xs: 'column' },
         justifyContent: 'center',
         background: '#F2FCFF',
         height: '490px',
-        mt: 0
+        mt: { lg: 0, xs: 5 }
       }}>
 
         <Grid item lg={0.5} md={0.6} sm={1} xs={2} sx={{
@@ -55,7 +56,6 @@ export default function Banner() {
           <a href="https://www.instagram.com/astubborne/"><TwitterIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
           <a href="https://github.com/SanchitDev47"><GitHubIcon sx={{ fontSize: '24px', cursor: 'pointer', color: 'black' }} /></a>
         </Grid>
-
         <Grid item lg={7.2} md={7} sm={9} xs={12} sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -79,7 +79,7 @@ export default function Banner() {
             fontSize: { lg: '40%', md: '30%', xs: '25%' },
             color: 'black'
           }}>
-          <TypewriterComponent typewriterOptions={typewriterOptions} />
+            <TypewriterComponent typewriterOptions={typewriterOptions} />
           </Typography>
 
           <Typography variant='caption' sx={{
@@ -103,11 +103,10 @@ export default function Banner() {
         {/* Banner Avatar */}
         <Grid item lg={2.2} md={2} sm={3.5} xs={1} sx={{
           display: 'flex',
-          flexDirection: 'column',
+          flexDirection: { lg: 'row', xs: 'column' },
           flexWrap: 'nowrap'
-
         }}>
-          {/* <Avatar className={classes.avatar}>
+          <Avatar className={classes.avatar}>
             <Image
               src={myImage}
               alt=""
@@ -115,7 +114,7 @@ export default function Banner() {
               height={250}
               quality={100}
             />
-          </Avatar> */}
+          </Avatar>
         </Grid>
       </Grid>
     </>

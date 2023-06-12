@@ -75,14 +75,14 @@ export default function IndexApp(props: Props) {
                             variant="h1"
                             component="div"
                             // onClick={navigateToSkills}
-                            sx={{ cursor: 'pointer', flexGrow: 1, mx: { lg: 22, md: 15, sm: 1 }, color: '#20C5FA', fontWeight: 600, fontSize: '28px', display: { xs: 'none', sm: 'block' } }}
+                            sx={{ cursor: 'pointer', flexGrow: 1, mx: { lg: 22, md: 15, sm: 1 }, color: '#20C5FA', fontWeight: 600, fontSize: { lg: '28px', xs: '22px' }, display: { xs: 'none', sm: 'block' } }}
                         >
                             Sanchit
                         </Typography>
                         <Box sx={{ mr: { lg: 15, md: 2, sm: 2, xs: 1 }, display: { xs: 'none', sm: 'block' } }}>
                             {navItems.map((title: any, idx: any) => (
                                 <Link key={idx} spy={true} to={title.toLowerCase()} smooth={true} duration={500}>
-                                    <Button key={idx} sx={{ mr: { lg: 1.7, md: 2, sm: 0, xs: 1 }, color: 'black', fontWeight: '20px' }}>
+                                    <Button key={idx} sx={{ mr: { lg: 1.7, xs: 0 }, color: 'black', fontWeight: '20px' }}>
                                         {title}
                                     </Button>
                                 </Link>

@@ -33,7 +33,7 @@ export default function About() {
           alt="The house from the offer."
           src="/public/Assets/sanchit.jpg"
         />
-        <Grid lg={3} md={5} sm={5} xs={5} sx={{ display: 'flex', height: '90%', width: ' 30%', flexDirection: 'column', mt: { lg: 0, md: 0, sm: 0, xs: '30px' }, alignItems: { lg: 'flex-start', md: 'flex-start', sm: 'flex-start', xs: 'center' }, textAlign: { lg: 'left', md: 'left', sm: 'left', xs: 'center' }, justifyContent: 'flex-end' }}>
+        <Grid lg={3} md={5} sm={5} xs={5} sx={{ display: 'flex', height: '90%', width: { lg: '30%', xs: '50%' }, flexDirection: 'column', mt: { lg: 0, md: 0, sm: '0px', xs: '30px' }, alignItems: { lg: 'flex-start', md: 'flex-start', sm: 'flex-start', xs: 'center' }, textAlign: { lg: 'left', md: 'center', sm: 'center', xs: 'center' }, justifyContent: 'flex-end' }}>
           <Grid item sx={{ display: 'flex', width: '100%', height: '90%' }}>
             <Typography variant='body1' sx={{ fontSize: '18px' }}>
               Web Developer with extensive knowledge the
