@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const path = require('path')
 const nextConfig = {
+  distDir: 'out',
   experimental: {
     appDir: true,
   },

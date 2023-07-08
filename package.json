@@ -1,9 +1,8 @@
 {
   "name": "portfoliosanchit",
   "version": "0.1.0",
-  "main": "dist/pages/index.js",
   "engines": {
-    "node": "16"
+    "node": "18.x"
   },
   "private": true,
   "dependencies": {
@@ -48,11 +47,10 @@
     "typewriter-effect": "^2.20.1"
   },
   "scripts": {
-    "lint": "next lint",
-    "dev": "next dev",
-    "build": "next build && next export -o out",
-    "start": "next start",
-    "deploy": "next build && firebase deploy --only hosting"
+    "dev": "next",
+    "build": "next build",
+    "start": "npm run build && next start",
+    "postinstall": "echo 'It worked!'"
   },
   "eslintConfig": {
     "extends": [
