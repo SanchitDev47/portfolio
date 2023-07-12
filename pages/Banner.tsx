@@ -3,7 +3,6 @@ import SendIcon from '@mui/icons-material/Send';
 import { Typography, Grid, Avatar } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import styled from 'styled-components';
 import myImage from '../public/Assets/Sanchit.jpg';
 import Image from 'next/image';
