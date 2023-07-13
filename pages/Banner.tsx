@@ -10,7 +10,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { makeStyles } from '@material-ui/core/styles';
 // import Avatar from '@material-ui/core/Avatar';
 import TypewriterComponent from '@/Common/Elements/TypewriterComponent';
-import { Options } from 'typewriter-effect';
+// import { Options } from 'typewriter-effect';
 
 const useStyles = makeStyles({
   avatar: {
@@ -18,15 +18,15 @@ const useStyles = makeStyles({
     height: 250,
   },
 });
-const typewriterOptions: Partial<Options> = {
-  strings: [
-    'ReactJS developer',
-    'Front-End Web developer',
-    'NextJS developer',
-  ],
-  autoStart: true,
-  loop: true,
-};
+// const typewriterOptions: Partial<Options> = {
+//   strings: [
+//     'ReactJS developer',
+//     'Front-End Web developer',
+//     'NextJS developer',
+//   ],
+//   autoStart: true,
+//   loop: true,
+// };
 
 
 export default function Banner() {
@@ -37,7 +37,7 @@ export default function Banner() {
       <Grid container sx={{
         display: 'flex',
         alignItems: 'center',
-        flexDirection: { lg: 'row', md: 'row',sm: 'grid', xs: 'column' },
+        flexDirection: { lg: 'row', md: 'row', sm: 'grid', xs: 'column' },
         justifyContent: 'center',
         background: '#F2FCFF',
         height: '490px',
@@ -78,7 +78,8 @@ export default function Banner() {
             fontSize: { lg: '40%', md: '30%', xs: '25%' },
             color: 'black'
           }}>
-            <TypewriterComponent typewriterOptions={typewriterOptions} />
+            FrontEnd Develeoper
+            {/* <TypewriterComponent typewriterOptions={typewriterOptions} /> */}
           </Typography>
 
           <Typography variant='caption' sx={{
@@ -105,7 +106,7 @@ export default function Banner() {
           flexDirection: { lg: 'row', xs: 'column' },
           flexWrap: 'nowrap'
         }}>
-          <Avatar className={classes.avatar}>
+          {/* <Avatar className={classes.avatar}>
             <Image
               src={myImage}
               alt=""
@@ -113,7 +114,7 @@ export default function Banner() {
               height={250}
               quality={100}
             />
-          </Avatar>
+          </Avatar> */}
         </Grid>
       </Grid>
     </>

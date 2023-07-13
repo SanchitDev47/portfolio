@@ -38,6 +38,10 @@ function index() {
           <Portfolio />
         </PageNavigation>
 
+        <PageNavigation id={'testmonials'}>
+          <Testmonials />
+        </PageNavigation>
+
         <PageNavigation id={'contact'}>
           <Contact />
         </PageNavigation>
