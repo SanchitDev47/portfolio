@@ -7,7 +7,7 @@ import Service from './Service';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Skills from './Skills';
-import Testmonials from './Testmonials';
+// import Testmonials from './Testmonials';
 import { Box } from '@mui/material';
 
 
@@ -38,9 +38,9 @@ function index() {
           <Portfolio />
         </PageNavigation>
 
-        <PageNavigation id={'testmonials'}>
+        {/* <PageNavigation id={'testmonials'}>
           <Testmonials />
-        </PageNavigation>
+        </PageNavigation> */}
 
         <PageNavigation id={'contact'}>
           <Contact />
