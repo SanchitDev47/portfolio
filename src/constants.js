@@ -126,7 +126,7 @@ export const PortfolioDetails = [
   {
     id: 1,
     title: 'Portfolio App',
-    img: 'public/Assets/Portfolio',
+    img: '',
     description: 'The product app manage all of business requriment and such as product summary and some more funcationality',
     demourl: 'https://portfoliosanchit.web.app/'
   },

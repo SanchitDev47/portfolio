@@ -42,7 +42,7 @@ export default function Header(props: Props) {
                 {navItems.map((item, idx) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton key={idx} sx={{ textAlign: 'center' }}>
-                            <Link key={idx} to={item.toLowerCase()} smooth={true} duration={500}>
+                            <Link onClick={handleDrawerToggle} key={idx} to={item.toLowerCase()} smooth={true} duration={500}>
                                 <ListItemText primary={item} >
                                     {item}
                                 </ListItemText>

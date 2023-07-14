@@ -28,10 +28,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      {/* <AppLayout> */}
+      <AppLayout>
         <Component {...pageProps} />
         <ScrollButton />
-      {/* </AppLayout> */}
+      </AppLayout>
     </>
   )
 }

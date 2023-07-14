@@ -1,8 +1,8 @@
-import React, { } from "react";
+import React from "react";
 import { Box } from "@mui/material";
 import { theme } from "./theme";
-import Header from "./UI/Header";
-import Footer from "./UI/Footer";
+import Header from "./UI/header";
+import Footer from "./UI/footer";
 export default function AppLayout(props: any) {
   return (
     <div
@@ -26,9 +26,10 @@ export default function AppLayout(props: any) {
       >
         <div
           style={{
-            flex: 0.8,
-            width: '100%',
-            backgroundColor: "white",
+            
+            display: "flex",
+            flex: 1,
+            flexDirection: "column",
             color:'black',
           }}
         >

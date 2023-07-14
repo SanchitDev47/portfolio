@@ -10,12 +10,9 @@ import Skills from './Skills';
 // import Testmonials from './Testmonials';
 import { Box } from '@mui/material';
 
-
-
 function index() {
-
   return (
-    <>
+    <Box sx={{ width: '100%' }}>
       <Banner />
       {/* <Box> */}
       <PageNavigation id={'about'}>
@@ -46,7 +43,7 @@ function index() {
         <Contact />
       </PageNavigation>
       {/* </Box> */}
-    </>
+    </Box>
   )
 }
 
