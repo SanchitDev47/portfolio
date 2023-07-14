@@ -10,7 +10,7 @@ interface SectionButtonProps {
 const PageNavigation: React.FC<SectionButtonProps> = ({ id, children }) => {
   return (
     <>
-      <Box sx={{ m: '25px', paddingTop: '65px' }} id={id}>
+      <Box sx={{ paddingTop: '65px' }} id={id}>
         {children}
       </Box>
     </>

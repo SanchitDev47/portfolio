@@ -1,14 +1,14 @@
 import type { AppProps } from 'next/app'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import ScrollButton from '@/Common/Elements/ScrollToTop'
-import Footer from '@/Common/UI/Footer'
+import ScrollButton from '@/Common/Elements/scrollToTop'
 import AppLayout from '@/Common/Applayout'
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 100%;
+    /* box-sizing: border-box; */
   }
 `
 
@@ -28,10 +28,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <AppLayout>
+      {/* <AppLayout> */}
         <Component {...pageProps} />
         <ScrollButton />
-      </AppLayout>
+      {/* </AppLayout> */}
     </>
   )
 }

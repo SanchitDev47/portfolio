@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import styled from 'styled-components';
 import { Service_OBJs } from '@/src/constants';
-import SubHeader from '@/Common/Elements/SubHeader';
-import { DetailPopup } from '@/Common/Elements/DetailsPopup';
+import SubHeader from '@/Common/Elements/subHeader';
+import { DetailPopup } from '@/Common/Elements/detailsPopup';
 
-export default function Service() {
+export default function service() {
   const [dialog, setdialog] = useState(false)
   const [popupdeatil, setPopupdeatil] = useState<any[]>([]);
 

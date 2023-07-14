@@ -22,7 +22,7 @@ interface Props {
 const drawerWidth = 240;
 const navItems = ['ABOUT', 'QUALIFICATION', 'SKILLS', 'SERVICE', 'PORTFOLIO', 'CONTACT'];
 
-export default function IndexApp(props: Props) {
+export default function Header(props: Props) {
 
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);

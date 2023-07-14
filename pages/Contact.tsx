@@ -5,10 +5,10 @@ import MailIcon from '@mui/icons-material/Mail';
 import { Box } from '@mui/system'
 import React from 'react'
 import styled from 'styled-components';
-import SubHeader from '@/Common/Elements/SubHeader';
+import SubHeader from '@/Common/Elements/subHeader';
 import { useForm } from "react-hook-form";
 
-export default function Contact() {
+export default function contact() {
   const {
     register,
     formState: { errors },

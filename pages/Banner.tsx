@@ -4,12 +4,12 @@ import { Typography, Grid, Avatar } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import styled from 'styled-components';
-import myImage from '../public/Assets/Sanchit.jpg';
+// import myImage from '../public/Assets/Sanchit.jpg';
 import Image from 'next/image';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { makeStyles } from '@material-ui/core/styles';
 // import Avatar from '@material-ui/core/Avatar';
-import TypewriterComponent from '@/Common/Elements/TypewriterComponent';
+import TypewriterComponent from '@/Common/Elements/typewriterComponent';
 // import { Options } from 'typewriter-effect';
 
 const useStyles = makeStyles({
@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 // };
 
 
-export default function Banner() {
+export default function banner() {
   const classes = useStyles();
 
   return (

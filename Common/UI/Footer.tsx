@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-export default function Footer() {
+export default function footer() {
   return (
     <Box sx={{
       background: '#F2FCFF',

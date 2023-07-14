@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { Box, Grid, Typography } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download';
 import Image from 'next/image';
-import SubHeader from '@/Common/Elements/SubHeader';
+import SubHeader from '@/Common/Elements/subHeader';
 
-export default function About() {
+export default function about() {
   const downloadCvUrl = 'http://localhost:3000/Assets/SanchitBarjibhe.pdf';
 
   const downloadCvEvent = (Url: string) => {
@@ -31,7 +31,7 @@ export default function About() {
             height: { lg: '193px', md: '219px', xs: '193px' },
           }}
           alt="The house from the offer."
-          src="/public/Assets/sanchit.jpg"
+          src="#"
         />
         <Grid item lg={3} md={5} sm={5} xs={5} sx={{ display: 'flex', height: '90%', width: { lg: '30%', xs: '50%' }, flexDirection: 'column', mt: { lg: 0, md: 0, sm: '0px', xs: '30px' }, alignItems: { lg: 'flex-start', md: 'flex-start', sm: 'flex-start', xs: 'center' }, textAlign: { lg: 'left', md: 'center', sm: 'center', xs: 'center' }, justifyContent: 'flex-end' }}>
           <Grid item sx={{ display: 'flex', width: '100%', height: '90%' }}>

@@ -7,7 +7,7 @@ import Service from './Service';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Skills from './Skills';
-import Testmonials from './Testmonials';
+// import Testmonials from './Testmonials';
 import { Box } from '@mui/material';
 
 
@@ -17,35 +17,35 @@ function index() {
   return (
     <>
       <Banner />
-      <Box sx={{ m: '2%' }}>
-        <PageNavigation id={'about'}>
-          <About />
-        </PageNavigation>
+      {/* <Box> */}
+      <PageNavigation id={'about'}>
+        <About />
+      </PageNavigation>
 
-        <PageNavigation id={'qualification'}>
-          <Qualification />
-        </PageNavigation>
+      <PageNavigation id={'qualification'}>
+        <Qualification />
+      </PageNavigation>
 
-        <PageNavigation id={'skills'}>
-          <Skills />
-        </PageNavigation>
+      <PageNavigation id={'skills'}>
+        <Skills />
+      </PageNavigation>
 
-        <PageNavigation id={'service'}>
-          <Service />
-        </PageNavigation>
+      <PageNavigation id={'service'}>
+        <Service />
+      </PageNavigation>
 
-        <PageNavigation id={'portfolio'}>
-          <Portfolio />
-        </PageNavigation>
+      <PageNavigation id={'portfolio'}>
+        <Portfolio />
+      </PageNavigation>
 
-        <PageNavigation id={'testmonials'}>
+      {/* <PageNavigation id={'testmonials'}>
           <Testmonials />
-        </PageNavigation>
+        </PageNavigation> */}
 
-        <PageNavigation id={'contact'}>
-          <Contact />
-        </PageNavigation>
-      </Box>
+      <PageNavigation id={'contact'}>
+        <Contact />
+      </PageNavigation>
+      {/* </Box> */}
     </>
   )
 }
