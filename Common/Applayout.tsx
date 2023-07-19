@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import { theme } from "./theme";
 import Header from "./UI/header";
 import Footer from "./UI/footer";
@@ -16,25 +16,21 @@ export default function AppLayout(props: any) {
       <Header />
       <div
         style={{
-          // marginTop: "10vh",
-          width: "100%",
           display: "flex",
-          flex: 1,
           flexDirection: "column",
-          justifyContent: "stretch",
+          // justifyContent: "stretch",
         }}
       >
-        <div
-          style={{
-            
+        <Grid item xs={12}
+          sx={{
+            width: "100%",
             display: "flex",
-            flex: 1,
             flexDirection: "column",
-            color:'black',
+            color: 'black',
           }}
         >
           {props.children}
-        </div>
+        </Grid>
         <Footer />
       </div>
     </div>

@@ -9,41 +9,51 @@ import Contact from './Contact';
 import Skills from './Skills';
 // import Testmonials from './Testmonials';
 import { Box } from '@mui/material';
+import banner from './Banner';
 
 function index() {
   return (
-    <Box sx={{ width: '100%' }}>
+    <>
       <Banner />
-      {/* <Box> */}
-      <PageNavigation id={'about'}>
-        <About />
-      </PageNavigation>
+      {/* <About />
+      <Qualification />
+      <Skills />
+      <Service />
+      <Portfolio />
+      {/* <Testmonials /> */}
+      {/* <Contact /> */}
+    </>
+    // <Box sx={{ width: '100%' }}>
+    //   <Box>
+    //     <PageNavigation id={'about'}>
+    //       <About />
+    //     </PageNavigation>
 
-      <PageNavigation id={'qualification'}>
-        <Qualification />
-      </PageNavigation>
+    //     <PageNavigation id={'qualification'}>
+    //       <Qualification />
+    //     </PageNavigation>
 
-      <PageNavigation id={'skills'}>
-        <Skills />
-      </PageNavigation>
+    //     <PageNavigation id={'skills'}>
+    //       <Skills />
+    //     </PageNavigation>
 
-      <PageNavigation id={'service'}>
-        <Service />
-      </PageNavigation>
+    //     <PageNavigation id={'service'}>
+    //       <Service />
+    //     </PageNavigation>
 
-      <PageNavigation id={'portfolio'}>
-        <Portfolio />
-      </PageNavigation>
+    //     <PageNavigation id={'portfolio'}>
+    //       <Portfolio />
+    //     </PageNavigation>
 
-      {/* <PageNavigation id={'testmonials'}>
-          <Testmonials />
-        </PageNavigation> */}
+    //     <PageNavigation id={'testmonials'}>
+    //       <Testmonials />
+    //     </PageNavigation>
 
-      <PageNavigation id={'contact'}>
-        <Contact />
-      </PageNavigation>
-      {/* </Box> */}
-    </Box>
+    //     <PageNavigation id={'contact'}>
+    //       <Contact />
+    //     </PageNavigation>
+    //   </Box>
+    // </Box>
   )
 }
 

@@ -58,7 +58,7 @@ export default function contact() {
 
             <Grid>
               <TextField sx={{ width: '100%', }} InputLabelProps={{ shrink: true }} {...register("email", { required: "Email is Required" })} id="outlined-basic" name="email" label="Email" variant="outlined" />
-              {errors.subject && <p role="alert" style={{ margin: '0px', paddingTop: '7px', color: "red" }}>{`${errors.subject.message}`}</p>}
+              {errors.email && <p role="alert" style={{ margin: '0px', paddingTop: '7px', color: "red" }}>{`${errors.email.message}`}</p>}
             </Grid>
 
             <Grid>
