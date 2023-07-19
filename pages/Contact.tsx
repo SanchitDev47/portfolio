@@ -42,7 +42,7 @@ export default function contact() {
           <Typography sx={{ fontSize: 20, display: 'flex', alignItems: 'center', gap: '25px' }}><MailIcon sx={{ height: 24, width: 24, color: '#20C5FA' }} />sanchitbarjibhe98@gmail.com</Typography>
         </Grid>
 
-        <Grid item lg={5} sx={{ display: 'flex', flexDirection: 'column', height: '20%', justifyContent: 'flex-start', gap: '30px', alignItems: { lg: 'flex-end', xs: 'center' } }}>
+        <Grid item lg={5} xs={3} sx={{ display: 'flex', flexDirection: 'column', height: '20%', justifyContent: 'flex-start', gap: '30px', alignItems: { lg: 'flex-end', xs: 'center' } }}>
           <Box sx={{ display: 'flex', justifyContent: 'space-between', gap: '30px', width: '465px' }}>
             <Grid>
               <TextField sx={{ width: '100%', }} InputLabelProps={{ shrink: true }} {...register("visitorName", { required: "First Name is Required" })} id="outlined-basic" name="FirstName" label="First Name" variant="outlined" />
@@ -55,7 +55,6 @@ export default function contact() {
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
-
             <Grid>
               <TextField sx={{ width: '100%', }} InputLabelProps={{ shrink: true }} {...register("email", { required: "Email is Required" })} id="outlined-basic" name="email" label="Email" variant="outlined" />
               {errors.email && <p role="alert" style={{ margin: '0px', paddingTop: '7px', color: "red" }}>{`${errors.email.message}`}</p>}

@@ -4,34 +4,10 @@ import { Typography, Grid, Avatar } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import styled from 'styled-components';
-// import myImage from '../public/Assets/Sanchit.jpg';
-import Image from 'next/image';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import { makeStyles } from '@material-ui/core/styles';
-// import Avatar from '@material-ui/core/Avatar';
-import TypewriterComponent from '@/Common/Elements/typewriterComponent';
-// import { Options } from 'typewriter-effect';
-
-const useStyles = makeStyles({
-  avatar: {
-    width: 250,
-    height: 250,
-  },
-});
-// const typewriterOptions: Partial<Options> = {
-//   strings: [
-//     'ReactJS developer',
-//     'Front-End Web developer',
-//     'NextJS developer',
-//   ],
-//   autoStart: true,
-//   loop: true,
-// };
 
 
 export default function banner() {
-  const classes = useStyles();
-
   return (
     <>
       <Grid container sx={{
@@ -40,11 +16,12 @@ export default function banner() {
         flexDirection: { lg: 'row', md: 'row', sm: 'grid', xs: 'column' },
         justifyContent: 'center',
         background: '#F2FCFF',
+        // background: 'aqua',
         height: '490px',
         mt: { lg: 0, xs: 5 }
       }}>
 
-        <Grid item lg={0.5} md={0.6} sm={1} xs={2} sx={{
+        <Grid item lg={0.5} md={0.6} sm={1} xs={0} sx={{
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'flex-end',
@@ -57,9 +34,13 @@ export default function banner() {
         </Grid>
         <Grid item lg={7.2} md={7} sm={9} xs={12} sx={{
           display: 'flex',
+          width: { md: '100%', sm: '100%', xs: '55%' },
+          alignItems: { lg: 'flex-start', md: 'flex-start', sm: 'flex-start', xs: 'center' },
+          textAlign: { lg: 'left', md: 'left', sm: 'left', xs: 'center' },
           flexDirection: 'column',
           fontSize: '64px',
           flexWrap: 'nowrap',
+          mt: { lg: 0, md: 0, sm: 0, xs: '131px' }
 
         }}>
           <Typography sx={{
@@ -75,7 +56,7 @@ export default function banner() {
           <Typography sx={{
             paddingBottom: '10px',
             fontWeight: 600,
-            fontSize: { lg: '40%', md: '30%', xs: '25%' },
+            fontSize: { lg: '40%', md: '30%', xs: '30%' },
             color: 'black'
           }}>
             FrontEnd Develeoper
@@ -84,8 +65,8 @@ export default function banner() {
 
           <Typography variant='caption' sx={{
             paddingBottom: '30px',
-            width: { lg: '50%', xs: '52%', },
-            fontSize: { lg: '30%', xs: '25%' },
+            width: { lg: '50%', md: '50%', sm: '50%', xs: '94%', },
+            fontSize: { lg: '30%', xs: '26%' },
             color: 'black',
             flexWrap: 'wrap'
           }}>

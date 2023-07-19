@@ -8,22 +8,32 @@ export default function footer() {
   return (
     <Box sx={{
       background: '#F2FCFF',
+      // background: 'aqua',
       height: '300px', width: '100%',
     }}>
-      <Grid container spacing={3} sx={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'column' }}>
-        <Grid item sx={{ display: 'flex', width: '90%', flexDirection: 'row', justifyContent: 'space-between' }}>
-          <Box sx={{ ml: '6%' }}>
+      <Grid container sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        mt: '2.5%',
+        mb: '2.5%',
+        paddingRight: '1.5%',
+        paddingLeft: '1.5%',
+      }}>
+        <Grid item sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', mr: '6%', ml: '6%', paddingBottom: '1.5%', paddingTop: '1.5%' }}>
+          <Box>
             <Typography
               variant="h1"
               component="div"
-              sx={{ display: 'flex', flexGrow: 1, mx: { lg: 22, md: 15, sm: 1 }, color: '#20C5FA', fontWeight: 600, fontSize: '22px', }}
+              sx={{ display: 'flex', flexGrow: 1, mx: { lg: 15, md: 15, sm: 1 }, color: '#20C5FA', fontWeight: 600, fontSize: '22px', }}
             >
               Sanchit
             </Typography>
             <Typography
               variant="h1"
               component="div"
-              sx={{ display: 'flex', flexGrow: 1, mx: { lg: 22, md: 15, sm: 1 }, color: 'black', fontSize: '16px' }}
+              sx={{ display: 'flex', flexGrow: 1, mx: { lg: 15, md: 15, sm: 1 }, color: 'black', fontSize: '16px' }}
             >
               Front-End Developer
             </Typography>

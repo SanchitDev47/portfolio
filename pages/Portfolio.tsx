@@ -55,7 +55,7 @@ export default function portfolio() {
                 <Typography variant='h5'>{item.title}</Typography>
                 <Typography variant='subtitle1'>{item.description}</Typography>
               </Box>
-              <a href={item.demourl}><DemoBtn>Demo<ArrowForwardIcon /></DemoBtn></a>
+              <Link href={item.demourl}><DemoBtn>Demo<ArrowForwardIcon /></DemoBtn></Link>
             </Grid>
           </Grid>
         )
@@ -76,9 +76,13 @@ const DemoBtn = styled.button`
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-    align-items: center;
-    height: 40px;
-    width: 106px;
-    padding: 0;
-    justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  width: 106px;
+  padding: 0;
+  justify-content: space-evenly;
+`;
+
+const Link = styled.a`
+text-decoration: none;
 `;
