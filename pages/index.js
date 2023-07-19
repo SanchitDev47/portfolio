@@ -34,10 +34,6 @@ function index() {
         <PageNavigation id={'portfolio'}>
           <Portfolio />
         </PageNavigation>
-        {/* 
-        <PageNavigation id={'testmonials'}>
-          <Testmonials />
-        </PageNavigation> */}
 
         {/* <PageNavigation id={'contact'}>
           <Contact />
