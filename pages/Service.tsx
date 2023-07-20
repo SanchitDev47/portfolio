@@ -1,14 +1,14 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
-import React, { useState } from 'react'
+import * as React from 'react'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import styled from 'styled-components';
 import { Service_OBJs } from '@/src/constants';
 import SubHeader from '@/Common/Elements/SubHeader';
 // import { DetailPopup } from '@/Common/Elements/DetailsPopup';
 
-export default function service() {
-  const [dialog, setdialog] = useState(false)
-  const [popupdeatil, setPopupdeatil] = useState<any[]>([]);
+export default function Service() {
+  const [dialog, setdialog] = React.useState(false)
+  const [popupdeatil, setPopupdeatil] = React.useState<any[]>([]);
 
 
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import { theme } from "./theme";
-import Header from "./UI/header";
-import Footer from "./UI/footer";
+import Header from "./UI/Header";
+import Footer from "./UI/Footer";
 export default function AppLayout(props: any) {
   return (
     <div

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Box, Grid, Typography } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download';
 import Image from 'next/image';
-import SubHeader from '@/Common/Elements/subHeader';
+import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function about() {
   const downloadCvUrl = 'http://localhost:3000/Assets/SanchitBarjibhe.pdf';

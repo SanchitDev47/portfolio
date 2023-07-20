@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import ScrollButton from '@/Common/Elements/scrollToTop'
+import ScrollButton from '@/Common/Elements/ScrollToTop'
 import AppLayout from '@/Common/Applayout'
 
 const GlobalStyle = createGlobalStyle`

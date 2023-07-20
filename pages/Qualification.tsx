@@ -6,7 +6,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { Typography, Box, Grid } from '@mui/material';
-import SubHeader from '@/Common/Elements/subHeader';
+import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function qualification() {
     return (

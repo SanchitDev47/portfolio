@@ -3,7 +3,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import styled from 'styled-components';
 import React from 'react'
 import { PortfolioDetails } from '@/src/constants';
-import SubHeader from '@/Common/Elements/subHeader';
+import SubHeader from '@/Common/Elements/SubHeader';
 
 export default function portfolio() {
   return (

@@ -2,10 +2,10 @@ import { Avatar, Box, Grid, Typography, Rating } from '@mui/material'
 import * as React from 'react';
 import { Testmonials_OBJs } from '@/src/constants';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SubHeader from '@/Common/Elements/subHeader';
+import SubHeader from '@/Common/Elements/SubHeader';
 import 'swiper/css';
 
-export default function testmonials() {
+export default function Testmonials() {
   const [data, setData] = React.useState(Testmonials_OBJs);
   const UpdateRating = (itemId: any, newRating: any) => {
     const updatedData = data.map(item => {
